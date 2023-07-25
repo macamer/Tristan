@@ -1,0 +1,320 @@
+
+/*estilo texto*/
+/*INICIO*/
+/*nombre
+header {
+    font-family: 'Caveat';
+    font-size: 5em;
+    color: white;
+    text-align: center;
+}
+*/
+body{
+    margin: 0; 
+    font-family:  Candara, 'Caveat' ,Helvetica, Arial, sans-serif;
+    /*background-image: url('../images/fondo.jpg');
+    background-size: cover;
+    background-position: center; */
+    overflow-x: hidden;
+}
+/* RESET CSS */
+
+html body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  h2{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  p{
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: justify;
+  }
+
+  /*quitar estilo a los enlaces*/
+  a {
+    color: initial;
+    text-decoration: none;
+  }
+
+/*NAVEGADOR*/
+.topbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #21302c;
+    height: 3em;
+    padding: 10px;
+    width: 100%;
+}
+
+nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav a{
+    padding: 2px 7px 2px 7px;
+}
+
+.nav-menu__item{
+    margin: 0 1rem;
+    overflow: hidden;
+    background-color: #21302c;
+    
+    text-decoration: none;
+    display: inline;
+}
+li a{
+    color: white;
+}
+.nav-menu>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 3em;
+    cursor: pointer;
+    align-items: center;
+}
+
+/*ocultar cuadrado seleccionador*/
+#menu-toggle {
+    display: none;
+}
+
+
+nav a.point:hover {
+    color: #d895a9;
+    cursor: pointer;
+    outline: 0;
+}
+/*ICONOS*/
+.icon-home {
+    width: 3em;
+    height: 3em;
+    margin-left: auto;
+    padding-right: 1.5em;
+    filter: invert(100%)
+}
+.icon-home:hover{
+    filter: invert(70%);
+}
+
+
+/*nav para movil*/
+@media (max-width:768px) {
+    .menu-button-container {
+        display: flex; 
+      }
+
+    .nav-menu {
+        position: absolute;
+        top: 2.1em;
+        left: 0;
+        width: 100vw;
+        /*radio no funciona
+        border-radius: 5%;
+        border:#6AE8C7;
+        */  
+    }
+    .nav-menu__item {
+        text-decoration: none;
+        font-weight: bold;
+     }
+
+    .nav-menu>ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #menu-toggle~.nav-menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked~.nav-menu li {
+        height: 3em;
+        padding: 0.6em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .nav-menu>li {
+        display: flex;
+        margin: 0;
+        padding: 1em 0;
+        width: 70%;
+    }
+}
+
+
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#titulo>img{
+    height: 80%;
+    max-height: 100vh;
+    margin-top: 5em;
+    margin-bottom: 5%;
+    /*para que la imagen no se deforme*/
+    object-fit: cover;
+}
+@media (max-width:768px) {
+    #imagen-cambiante{
+    width: 100%;
+    height: auto;
+    margin-bottom: 4%;
+}
+}
+
+/*descripcion intro*/
+.contenedor{
+    display: flex;
+    width: 100%;
+    height: 2em;
+    color:#d895a9;
+    font-size: 2em;
+    line-height: 2em;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /*ocutar elementos que se salen del contenedor*/
+    overflow: hidden;
+}
+.change{
+    list-style: none;
+    animation: cambiar 5s infinite;
+}
+@keyframes cambiar {
+    0%{margin-top: 2em;}
+    25%{margin-top: 2em;}
+    50%{margin-top: -2em;}
+    75%{margin-top: -2em;}
+    95%{margin-top: 2em;}
+    100%{margin-top: 2em;}
+}
+
+#transicion{
+    background-image: url('../images/fondo1.jpg');
+    background-size: cover;
+    background-position: center; 
+    width: 100%;
+    height: 4em;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+/*----SOBREMI---*/
+
+article{
+    background-image: url('../images/fondo2.jpg');
+}
+h2,#sobremi{
+    padding-top: 2em;
+    margin-top: 0;
+}
+
+/*imagenes sobre mi*/
+.flexbox{
+    display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*intro?
+.intro{
+    font-family: Candara; sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+*/
+footer{
+    font-family: sans-serif;;
+    text-align: center;
+    bottom: 0.5em;
+    color: white;
+
+}
+
+/*titulos
+nav{
+    display: flex;
+    background-color: #387162;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    height: 4em;
+    align-items: center;
+    
+    
+}
+& div{
+    padding: 10px;
+}
+nav a{
+    margin-top: 0;
+    color: white;
+    padding: 2px 7px 2px 7px;
+    text-decoration: none;
+}
+nav a.point:hover {
+    color: #6AE8C7;
+    cursor: pointer;
+    outline: 0;
+}
+
+a img{
+   width: 2em;
+   height: 2em;
+   padding-right: 3em;
+   border: 0;
+}
+h2{
+    font-family: Candara;
+    padding-top: 3em;
+    margin-left: 0.5em;
+    font-size: 2em;
+    color: white;
+}
+h3 {
+    margin-left: 1em;
+    font-size: 1.5em;
+    
+}
+p{
+    text-align: justify;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+*/

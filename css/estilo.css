@@ -60,9 +60,7 @@ nav-menu {
   padding: 0;
   
 }
-.nav-menu>ul {
-    margin-top: 5em; /* Agrega un margen de 10em desde arriba */
-}
+
 nav a{
     padding: 2px 7px 2px 7px;
 }
@@ -124,6 +122,7 @@ li a:hover{
 .nav-menu>ul {
     display: flex;
     flex-direction: column;
+    margin-top: 5em; /* Agrega un margen de 10em desde arriba */
 }
 #menu-toggle~.nav-menu li {
     height: 0;
@@ -164,6 +163,7 @@ footer{
     margin-left: 2em;
 }
 
+/*MOBIL*/
 @media (max-width:768px) {
     footer{
         font-size: 70%;
@@ -183,16 +183,22 @@ footer{
     .nav-menu>li {
         width: 50%;
     }
+    #icon-home {
+        width: 70%;
+    }
     #icon-home:hover {
         cursor: pointer;
         outline: 0;
-        filter: invert(0%);
+        width: 20em;
+       
     }
-    #icon-home {
-        width: 70%;
-        margin-top: 5em;
-        margin-bottom: 10em;
-        margin-left: 1em;
-        /*width: 3em; */
+    .nav-menu>ul {
+        display: flex;
+        margin-top: 5em; /* Agrega un margen de 10em desde arriba */
+    }
+    .nav-menu>li {
+        margin-left: 2em;
+        justify-content: flex-end; /* Alinea los elementos en el lado derecho */
+        text-align: right;
     }
 }

@@ -148,7 +148,6 @@ nav a.point:hover {
 #titulo>img{
     height: 80%;
     max-height: 100vh;
-    margin-top: 5em;
     margin-bottom: 5%;
     /*para que la imagen no se deforme*/
     object-fit: cover;

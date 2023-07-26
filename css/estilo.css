@@ -191,19 +191,35 @@ nav a.point:hover {
 /*----SOBREMI---*/
 
 article{
-    background-image: url('../images/fondo2.jpg');
+    background-color: white;
 }
 h2,#sobremi{
-    padding-top: 2em;
+    padding-top: 3em;
     margin-top: 0;
 }
 
 /*imagenes sobre mi*/
 .flexbox{
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2em;
+}
+.texto{
+    flex: 2;
+    padding-right: 2em;
+}
+.imagenes{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
-
+.imagenes img{
+    max-width: 100%;
+    margin-bottom: 1em;
+}
 
 
 

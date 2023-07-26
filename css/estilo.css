@@ -1,17 +1,10 @@
 
-/*estilo texto*/
-/*INICIO*/
-/*nombre
-header {
-    font-family: 'Caveat';
-    font-size: 5em;
-    color: white;
-    text-align: center;
-}
-*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 body{
     margin: 0; 
-    font-family:  Candara, 'Caveat' ,Helvetica, Arial, sans-serif;
+    font-family:  'Montserrat';
     /*background-image: url('../images/fondo.jpg');
     background-size: cover;
     background-position: center; */
@@ -73,34 +66,21 @@ nav a{
     margin: 0 1rem;
     overflow: hidden;
     background-color: #21302c;
-    
     text-decoration: none;
-    display: inline;
 }
 li a{
-    color: white;
-}
-.nav-menu>ul {
-    display: flex;
-    flex-direction: row;
+    color: rgb(238, 221, 127);
 }
 
-.menu-button-container {
-    display: none;
-    height: 100%;
-    width: 3em;
-    cursor: pointer;
-    align-items: center;
-}
+
 
 /*ocultar cuadrado seleccionador*/
 #menu-toggle {
     display: none;
 }
 
-
 nav a.point:hover {
-    color: #d895a9;
+    color: #fcfbfb;
     cursor: pointer;
     outline: 0;
 }
@@ -118,7 +98,7 @@ nav a.point:hover {
 
 
 /*nav para movil*/
-@media (max-width:768px) {
+
     .menu-button-container {
         display: flex; 
       }
@@ -160,7 +140,7 @@ nav a.point:hover {
         padding: 1em 0;
         width: 70%;
     }
-}
+
 
 
 #titulo{

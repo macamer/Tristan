@@ -7,6 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="css/galeria.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -18,108 +19,36 @@
 
 
     <body id="page-top" class="index">  
-            
-            <div id="barra" class="topbar">
-                <input type="checkbox" name="Menu" id="menu-toggle" />
-                <label class="menu-button-container" for="menu-toggle">
-                    <img id="icon-home" class="icon-home change-icon-color" src="images/menu.svg" alt="icon menu"/>
-                </label>
-                <div class="menu-button"></div>
-                    <nav class="nav-menu">
-                        <ul class="nav-menu">
-                            <li class="nav-menu__item">
-                                <a class="point" href="#artista">EL ARTISTA</a>
-                            </li>
-                            <li class="nav-menu__item">
-                                <a class="point" href="#obras">ESCULTURA</a>
-                            </li>
-                            <li class="nav-menu__item">
-                                <a class="point" href="maca_proj.html">PROYECTOS</a>
-                            </li>
-                            <li class="nav-menu__item">
-                                <a class="point" href="maca_contacto.html">CONTACTO</a>
-                            </li>
-                        </ul>
-                    </nav>
-                <div id="icon-home" class="nav-menu__button">
-                    <a href="#page-top"><img id="icon-home" class="icon-home change-icon-color" src="images/tristan-icon.png" alt="icono"/></a>
-                </div>
+        <div class="imagen_fondo">   
+        <div id="barra" class="topbar">
+            <input type="checkbox" name="Menu" id="menu-toggle" />
+            <label class="menu-button-container" for="menu-toggle">
+                <img id="icon-home" class="icon-home change-icon-color" src="images/menu2.svg" alt="icon menu"/>
+            </label>
+            <div class="menu-button"></div>
+                <nav class="nav-menu">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item">
+                            <a class="point" href="artista.html">EL ARTISTA</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="point" href="escultura.html">ESCULTURA</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="point" href="restauracion.html">RESTAURACION</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="point" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </nav>
+            <div id="icon-home" class="nav-menu__button">
+                <a href="index.html"><img id="icon-home" class="icon-home change-icon-color firma" src="images/firma_tristan.svg" alt="icono"/></a>
             </div>
-                     
-        
-        <header id="tristan"> 
-            <!-- CAMBIAR IMAGEN CADA 2 S ---------
-            <img id="imagen-cambiante" src="" alt="Imagen Cambiante">
-            <script>
-                const imagenes = [
-                'images/animalsalvaje-web2.png',
-                'images/animalsalvaje-web3.png',
-                ]
-                function cambiarImagen() {
-                    const imgElement = document.getElementById('imagen-cambiante');
-                    let index = 0;
-                    setInterval(() => {
-                        imgElement.src = imagenes[index];
-                        index = (index + 1) % imagenes.length;
-                    }, 2000); // 4000 milisegundos = 4 segundos
-                }
-
-                // Inicia el cambio de imagen al cargar la página
-                cambiarImagen();
-            </script>
-            -->
-            
-            <div id="titulo"><img src="images/neptuno.jpg" alt="firma"></div>
-           <div class="contenedor">
-                <ul class="change">
-                    <li>Escultor</li>
-                    <li>Restaurador</li>
-                </ul>
-            </div>
-    </header>
-        <div id="transicion"></div>
-
-        
-        <article>
-                <h2 id="artista">EL ARTISTA</h2>
-            <section> 
-                <div class="flexbox">
-                    <div class="texto">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis earum debitis incidunt reprehenderit doloremque mollitia, ab illo rem doloribus laudantium nulla deserunt repellat autem nisi dolor totam expedita! Tempore, esse. <b>MaCa</b>.</p></br>
-                        <p>Nací y crecí en una maravillosa isla de las Islas Baleares, <b>Menorca</b>. Creo que es de entender, que esa uno de mis lugares favoritos en el mundo.</p>               
-                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum iusto vero totam dolores et suscipit nobis autem? Sequi enim accusamus blanditiis labore eos ipsam temporibus soluta delectus pariatur quasi?</p> 
-                    </div>
-                    <div class="imagenes">
-                        <img src="images/trabajando.jpeg" alt="trabajando"/>
-                        <img src="images/dunar.JPG" alt="esculturadunar"/>
-                    </div>
-                </div>
-            </section>
-            
-        </article>
-
-        <article class="obras">
-            <h2 id="obras">ESCULTURA</h2>
-        <section> 
-            <div class="flexbox">
-                <div class="texto">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis earum debitis incidunt reprehenderit doloremque mollitia, ab illo rem doloribus laudantium nulla deserunt repellat autem nisi dolor totam expedita! Tempore, esse.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae temporibus vitae debitis quis reprehenderit nobis, quae, error necessitatibus incidunt soluta aspernatur tempora amet architecto libero ipsa delectus cumque aliquam!</p>               
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum iusto vero totam dolores et suscipit nobis autem? Sequi enim accusamus blanditiis labore eos ipsam temporibus soluta delectus pariatur quasi?</p> 
-                </div>
-                <div class="imagenes">
-                    <img src="images/trabajando.jpeg" alt="trabajando"/>
-                    <img src="images/dunar.JPG" alt="esculturadunar"/>
-                </div>
-            </div>
-        </section>
-    </article>
-
-
-        <footer>Designed and edited by Maria Cavaller 2023</footer>
-        
-
-        <script>
+        </div>
+        <footer>Designed and edited by Maria Cavaller 2023</footer>         
+        </div>
+      <script>
             // Escucha el evento de clic en los elementos del menú
             const menuItems = document.querySelectorAll('.nav-menu__item');
             menuItems.forEach(item => {
@@ -130,22 +59,5 @@
                 });
             });
         </script>
-        <script>
-            // Script para hacer el navegador transparente al hacer scroll en cierto punto
-            window.addEventListener('scroll', function() {
-                var navbar = document.getElementById('barra');
-                var icons = document.getElementsByClassName('change-icon-color');
-                var scrollPos = window.scrollY;
-    
-                if (scrollPos > 350) { // Ajusta el valor 200 al punto en el que quieres que ocurra el cambio
-                    navbar.classList.add('transparent');
-                    icon.classList.add('change-icon-color');;
-                } else {
-                    navbar.classList.remove('transparent');
-                    icon.classList.remove('change-icon-color');
-                }
-            });
-        </script>
-
     </body>
 </html>

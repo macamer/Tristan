@@ -49,10 +49,9 @@ html body {
     position: fixed;
     /*background-color: #e6dfcb;*/
     height: 3em;
-    padding: 10px;
-    width: 100%;
-    
+    width: 100%;    
 }
+
 
 nav-menu {
   display: flex;
@@ -61,7 +60,9 @@ nav-menu {
   padding: 0;
   
 }
-
+.nav-menu>ul {
+    margin-top: 5em; /* Agrega un margen de 10em desde arriba */
+}
 nav a{
     padding: 2px 7px 2px 7px;
 }
@@ -69,11 +70,15 @@ nav a{
 .nav-menu__item{
     margin: 0 1rem;
     overflow: hidden;
-    background-color: rgba(0,0,0,.5);
+    /*background-color: rgba(0,0,0,.5);*/
     text-decoration: none;
 }
+
 li a{
-    color: rgb(238, 218, 153);
+    color: black;
+}
+li a:hover{
+    font-size: 150%;
 }
 
 /*ocultar cuadrado seleccionador*/
@@ -84,19 +89,22 @@ li a{
 #icon-home:hover {
     cursor: pointer;
     outline: 0;
+    width: 30em;
+   
 }
 /*ICONOS*/
-.icon-home {
-    width: 3em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+#icon-home{
+    width: 25em;
+    /*width: 3em; */
+    margin-top: 5em;
     margin-left: 1em;
 }
+/*
 .firma{
     width: 35em;
     margin-right: 1em;
     margin-top: 3em;   
-}
+}*/
 
 .menu-button-container {
     display: flex; 
@@ -160,10 +168,11 @@ footer{
     footer{
         font-size: 70%;
     }
+    /*
     .firma{
         width: 20em;
         margin-left: 1em;
-    }
+    }*/
     .imagen_fondo{
         background-image: url(../images/INICIO.JPG);
         background-size: cover;
@@ -173,5 +182,17 @@ footer{
     }
     .nav-menu>li {
         width: 50%;
+    }
+    #icon-home:hover {
+        cursor: pointer;
+        outline: 0;
+        filter: invert(0%);
+    }
+    #icon-home {
+        width: 70%;
+        margin-top: 5em;
+        margin-bottom: 10em;
+        margin-left: 1em;
+        /*width: 3em; */
     }
 }

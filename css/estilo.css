@@ -3,11 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 body{
-    margin: 0; 
-    font-family:  'Montserrat';
-    /*background-image: url('../images/fondo.jpg');
-    background-size: cover;
-    background-position: center; */
+    font-family:  'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: #928c77;
     overflow-x: hidden;
 }
 /* RESET CSS */
@@ -44,7 +41,7 @@ html body {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background-color: #21302c;
+    background-color: #494433;
     height: 3em;
     padding: 10px;
     width: 100%;
@@ -65,7 +62,7 @@ nav a{
 .nav-menu__item{
     margin: 0 1rem;
     overflow: hidden;
-    background-color: #21302c;
+    background-color: rgba(0,0,0,.5);
     text-decoration: none;
 }
 li a{

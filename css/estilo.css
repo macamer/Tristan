@@ -7,7 +7,7 @@ html body{
     
 }
 .imagen_fondo{
-    background-image: url(../images/INICIO.JPG);
+    background-image: url(../images/INICIO2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@ nav a{
     text-decoration: none;
 }
 li a{
-    color: rgb(238, 221, 127);
+    color: rgb(238, 218, 153);
 }
 
 /*ocultar cuadrado seleccionador*/
@@ -82,20 +82,20 @@ li a{
 }
 
 #icon-home:hover {
-
     cursor: pointer;
     outline: 0;
 }
 /*ICONOS*/
 .icon-home {
     width: 3em;
-
-    padding-right: 1.5em;
-    filter: invert(0%)
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1em;
 }
 .firma{
-    width: 20em;
-    margin-left: 1em;
+    width: 35em;
+    margin-right: 1em;
+    margin-top: 3em;   
 }
 
 .menu-button-container {
@@ -133,7 +133,7 @@ li a{
     display: flex;
     margin: 0;
     padding: 1em 0;
-    width: 70%;
+    width: 30%;
 }
 
 /*fin del navegador*/
@@ -159,5 +159,19 @@ footer{
 @media (max-width:768px) {
     footer{
         font-size: 70%;
+    }
+    .firma{
+        width: 20em;
+        margin-left: 1em;
+    }
+    .imagen_fondo{
+        background-image: url(../images/INICIO.JPG);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .nav-menu>li {
+        width: 50%;
     }
 }

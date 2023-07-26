@@ -45,6 +45,8 @@ html body {
     height: 3em;
     padding: 10px;
     width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1;
 }
 
 nav-menu {
@@ -87,56 +89,58 @@ nav a.point:hover {
     height: 3em;
     margin-left: auto;
     padding-right: 1.5em;
-    filter: invert(100%)
-}
-.icon-home:hover{
-    filter: invert(70%);
+    filter: invert(0%)
 }
 
+.icon-home{
+    transition: filter 0.3s ease-in-out;
+}
+/* Estilos para hacer la barra transparente y cambiar color de los iconos al hacer scroll */
+.transparent {
+    background-color: transparent; /* Fondo transparente al hacer scroll */
+}
 
-/*nav para movil*/
+.change-icon-color {
+    fill: invert (0%); /* Cambiar color de los iconos al hacer scroll */
+}
 
-    .menu-button-container {
-        display: flex; 
-      }
+.menu-button-container {
+    display: flex; 
+}
 
-    .nav-menu {
-        position: absolute;
-        top: 2.1em;
-        left: 0;
-        width: 100vw;
-        /*radio no funciona
-        border-radius: 5%;
-        border:#6AE8C7;
-        */  
-    }
-    .nav-menu__item {
-        text-decoration: none;
-        font-weight: bold;
-     }
+.nav-menu {
+    position: absolute;
+    top: 2.1em;
+    left: 0;
+    width: 100vw;  
+}
+.nav-menu__item {
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    .nav-menu>ul {
-        display: flex;
-        flex-direction: column;
-    }
-    #menu-toggle~.nav-menu li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    #menu-toggle:checked~.nav-menu li {
-        height: 3em;
-        padding: 0.6em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    .nav-menu>li {
-        display: flex;
-        margin: 0;
-        padding: 1em 0;
-        width: 70%;
-    }
+.nav-menu>ul {
+    display: flex;
+    flex-direction: column;
+}
+#menu-toggle~.nav-menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+#menu-toggle:checked~.nav-menu li {
+    height: 3em;
+    padding: 0.6em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.nav-menu>li {
+    display: flex;
+    margin: 0;
+    padding: 1em 0;
+    width: 70%;
+}
 
 /*imagen principal*/
 

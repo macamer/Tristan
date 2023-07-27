@@ -27,6 +27,7 @@ html body {
     margin-left: 1em;
     margin-right: 1em;
     text-align: justify;
+    margin-top: 0;
   }
 
   /*quitar estilo a los enlaces*/
@@ -167,6 +168,19 @@ article{
     max-width: 100%;
     margin-bottom: 1em;
 }
+img{
+    max-width: 100%;
+}
+
+.photos-artista{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1em;
+}
+.dunar{
+    padding-right: 1em;
+}
 
 
 /*final*/
@@ -185,9 +199,21 @@ footer{
     footer{
         font-size: 70%;
     }
-    .firma{
-        width: 50%;
-        margin-left: 1em;
+    .topbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        /*background-color: #e6dfcb;*/
+        height: 3em;
+        padding: 10px;
+        width: 100%;
+        transition: background-color 0.3s ease-in-out;
+        z-index: 1;
+    }
+    .nav-menu__button>img{
+        width: 30%;
     }
 
 }

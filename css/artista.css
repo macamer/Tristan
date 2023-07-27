@@ -157,6 +157,9 @@ article{
     flex: 2;
     padding-right: 2em;
 }
+div.text2{
+    padding: 2em;
+}
 .imagenes{
     flex: 1;
     display: flex;
@@ -198,6 +201,7 @@ footer{
 @media (max-width:768px) {
     footer{
         font-size: 70%;
+        padding-right: 1em;
     }
     .topbar{
         display: flex;
@@ -214,6 +218,18 @@ footer{
     }
     .nav-menu__button>img{
         width: 30%;
+    }
+    .flexbox{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    .texto{
+        flex: 2;
+    }
+    div.text2{
+        padding: 1em;
     }
 
 }

@@ -151,14 +151,17 @@ article{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 .texto{
     flex: 2;
     padding-right: 2em;
 }
 div.text2{
-    padding: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+
 }
 .imagenes{
     flex: 1;
@@ -191,8 +194,7 @@ footer{
     text-align:right;
     bottom: 1em;
     color: black;
-
-    margin-left: 2em;
+    padding-left: 2em;
     margin-bottom: 2em;
 
 }
@@ -211,14 +213,16 @@ footer{
         position: absolute;
         /*background-color: #e6dfcb;*/
         height: 3em;
-        padding: 10px;
+        padding: 0;
+        padding-left: 1em;
         width: 100%;
         transition: background-color 0.3s ease-in-out;
         z-index: 1;
     }
-    .nav-menu__button>img{
-        width: 30%;
-    }
+    .nav-menu__button>img {
+        max-width: 100%; /* Esto asegura que el ancho no supere el tamaño del contenedor */
+        max-height: 100%; /* Esto asegura que la altura no supere el tamaño del contenedor */
+      }
     .flexbox{
         display: flex;
         align-items: flex-start;
@@ -230,6 +234,11 @@ footer{
     }
     div.text2{
         padding: 1em;
+    }
+    .firma{
+        width: 20em;
+        margin: 0;
+        padding: 0;
     }
 
 }

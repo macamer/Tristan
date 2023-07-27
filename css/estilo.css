@@ -201,4 +201,9 @@ footer{
         justify-content: flex-end; /* Alinea los elementos en el lado derecho */
         text-align: right;
     }
+    #menu-toggle:checked~.nav-menu li {
+        height: 3em;
+        margin-left: 40%;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
 }

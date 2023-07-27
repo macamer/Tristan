@@ -6,24 +6,19 @@
         <title>Tristan</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-        <link rel="stylesheet" type="text/css" href="css/galeria.css"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="css/artista.css"/>
                 <!-- poner icono en la pestaña -->
-        <link rel="icon" href="images/tristan-icon.png"/>
+        <link rel="icon" href="images/firma.svg"/>
     </head>
     
 
 
-    <body id="page-top" class="index">  
+    <body id="page-top" class="page-top">  
             
         <div id="barra" class="topbar">
             <input type="checkbox" name="Menu" id="menu-toggle" />
             <label class="menu-button-container" for="menu-toggle">
-                <img id="icon-home" class="icon-home change-icon-color" src="images/menu2.svg" alt="icon menu"/>
+                <img id="icon-home" class="icon-home change-icon-color" src="images/menu1.svg" alt="icon menu"/>
             </label>
             <div class="menu-button"></div>
                 <nav class="nav-menu">
@@ -49,84 +44,35 @@
                      
         
         <header id="tristan"> 
-            <!-- CAMBIAR IMAGEN CADA 2 S ---------
-            <img id="imagen-cambiante" src="" alt="Imagen Cambiante">
-            <script>
-                const imagenes = [
-                'images/animalsalvaje-web2.png',
-                'images/animalsalvaje-web3.png',
-                ]
-                function cambiarImagen() {
-                    const imgElement = document.getElementById('imagen-cambiante');
-                    let index = 0;
-                    setInterval(() => {
-                        imgElement.src = imagenes[index];
-                        index = (index + 1) % imagenes.length;
-                    }, 2000); // 4000 milisegundos = 4 segundos
-                }
-
-                // Inicia el cambio de imagen al cargar la página
-                cambiarImagen();
-            </script>
-            -->
-            
-            <div id="titulo"><img src="images/INICIO.JPG" alt="firma"></div>
-    </header>
+            <article>
+                <h2 id="titulo">TRISTAN TOMÁS</h2>
+                <section> 
+                    <div class="flexbox">
+                        <div class="texto">
+                            <p>Nacido y criado en Valencia capital. Tristan Tomás, desde pequeño ya tenía inquietudes para las artesanías.
+                                </br> En su casa siempre le enseñaron el valor de los objetos únicos y hechos a mano.</p>
+                            <p>Al terminar el instituto decidió que su camino iba a ser los material lígneos, por ello se matriculó 
+                                en el grado superior de <i>Desarrollo de productos de carpitería y mueble.</i> 
+                                </br> A continuación hizo la <i>Especialización Profesional en Industrias de Madera y Mueble</i> 
+                                en el Insituto Tecnológico de Mueble, Madera, Embalaje y Afines, impartido por AIDIMA. </p>               
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum iusto vero totam dolores et suscipit nobis autem? Sequi enim accusamus blanditiis labore eos ipsam temporibus soluta delectus pariatur quasi?</p> 
+                        </div>
+                        <div class="imagenes">
+                            <img src="images/trabajando.jpeg" alt="trabajando"/>
+                            <img src="images/dunar.JPG" alt="esculturadunar"/>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </header>
         
 
         
-        <article>
-                <h2 id="artista">EL ARTISTA</h2>
-            <section> 
-                <div class="flexbox">
-                    <div class="texto">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis earum debitis incidunt reprehenderit doloremque mollitia, ab illo rem doloribus laudantium nulla deserunt repellat autem nisi dolor totam expedita! Tempore, esse. <b>MaCa</b>.</p></br>
-                        <p>Nací y crecí en una maravillosa isla de las Islas Baleares, <b>Menorca</b>. Creo que es de entender, que esa uno de mis lugares favoritos en el mundo.</p>               
-                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum iusto vero totam dolores et suscipit nobis autem? Sequi enim accusamus blanditiis labore eos ipsam temporibus soluta delectus pariatur quasi?</p> 
-                    </div>
-                    <div class="imagenes">
-                        <img src="images/trabajando.jpeg" alt="trabajando"/>
-                        <img src="images/dunar.JPG" alt="esculturadunar"/>
-                    </div>
-                </div>
-            </section>
-            
-        </article>
+       
 
-        <article class="obras">
-            <h2 id="obras">ESCULTURA</h2>
-            <P>Su especialidad son los materiales tradicionales como la madera y la piedra.</P>
-            <p>La experimentación con técnicas innovadoras es su día a día. Si algo está por descubrir se pone a estudiarlo hasta que visualiza su aplicación en el mundo del arte. </p>
-            <p>A continuación se presentan parte de sus esculturas realizadas en los últimos años:</p>
-        <section> 
-            <h2>GALERIA</h2>
-            <div class="galery">
-                <div class="photo">
-                    <a href="javascript:void(0)" class="galery">
-                        <img id="uno" class="image" src="images/_MG_1484.JPG"/>
-                        <span class="c-card--name">La pareja</span></a>
-                </div>
-                <div class="photo">
-                    <a href="javascript:void(0)" class="galery">
-                        <img id="2" class="image" src="images/_MG_1485.JPG"/>
-                        <span class="c-card--name">La pareja</span></a>
-                </div>
-                <div class="photo">
-                    <a href="javascript:void(0)" class="galery">
-                        <img id="3" class="image" src="images/_MG_1486.JPG"/>
-                        <span class="c-card--name">La pareja</span></a>
-                </div>
-            </div>
-
-
-
-
-        </section>
-    </article>
-
-
+        <div>
         <footer>Designed and edited by Maria Cavaller 2023</footer>
-        
+        </div>
 
         <script>
             // Escucha el evento de clic en los elementos del menú

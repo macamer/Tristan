@@ -18,7 +18,7 @@
         <div id="barra" class="topbar">
             <input type="checkbox" name="Menu" id="menu-toggle" />
             <label class="menu-button-container" for="menu-toggle">
-                <img id="icon-home" class="icon-home change-icon-color" src="images/menu1.svg" alt="icon menu"/>
+                <img id="icon-home" class="icon-home change-icon-color" src="images/menu.svg" alt="icon menu"/>
             </label>
             <div class="menu-button"></div>
                 <nav class="nav-menu">
@@ -90,6 +90,9 @@
             </div>
         </div>
         
+        <div class="scroll-to-top">
+            <i class="fas fa-arrow-up"> <img src="images/flecha2.svg" alt="flecha"></i>
+          </div>
 
         <div>
         <footer>Designed and edited by Maria Cavaller 2023</footer>
@@ -106,7 +109,22 @@
                 });
             });
         </script>
-        
+        <script>
+            window.addEventListener('scroll', function() {
+              var scrollToTopBtn = document.querySelector('.scroll-to-top');
+              if (window.scrollY > 200) {
+                scrollToTopBtn.classList.add('show');
+              } else {
+                scrollToTopBtn.classList.remove('show');
+              }
+            });
+            document.querySelector('.scroll-to-top').addEventListener('click', function() {
+                window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+                });
+            });
+          </script>
        
 
     </body>

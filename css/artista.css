@@ -12,6 +12,8 @@ body{
 html body {
     margin: 0;
     height: 100%;
+    max-width: 100vh;
+    max-height: 100vh;
   }
   
   ul {
@@ -34,6 +36,7 @@ html body {
   a {
     color: initial;
     text-decoration: none;
+    margin: 0;
   }
 
 /*NAVEGADOR*/
@@ -43,7 +46,6 @@ html body {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    /*background-color: #e6dfcb;*/
     height: 3em;
     padding: 10px;
     width: 100%;
@@ -229,6 +231,7 @@ footer{
         font-size: 70%;
         padding-right: 1em;
     }
+
     .topbar{
         display: flex;
         flex-direction: row;
@@ -242,6 +245,8 @@ footer{
         width: 100%;
         transition: background-color 0.3s ease-in-out;
         z-index: 1;
+        max-width: 100%;
+        max-height: 100%;
     }
     .nav-menu__button>img {
         max-width: 100%; /* Esto asegura que el ancho no supere el tamaño del contenedor */
@@ -260,9 +265,11 @@ footer{
         padding: 1em;
     }
     .firma{
-        width: 20em;
+        width: 90%;
         margin: 0;
         padding: 0;
+        max-width: 100%;
+        max-height: 100%;
     }
 
 }

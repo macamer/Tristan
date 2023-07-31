@@ -180,6 +180,8 @@ footer{
         background-repeat: no-repeat;
         height: 100vh;
         max-height: 100%;
+        max-width: 100%; /* Esto asegura que el ancho no supere el tamaño del contenedor */
+        max-height: 100%;
     }
 /*navegador**/
 .menu-button-container {
@@ -227,21 +229,16 @@ footer{
     margin-top: 5em; /* Agrega un margen de 10em desde arriba */
 }
 
-    
 
-
-
-
-
-
-    #icon-home {
-        width: 70%;
-    }
-    #icon-home:hover {
-        cursor: pointer;
-        outline: 0;
-        width: 20em;
+ /*FIRMA*/
+#icon-home {
+    width: 70%;
+}
+#icon-home:hover {
+    cursor: pointer;
+    outline: 0;
+    width: 80%;
        
-    }
+}
     
 }

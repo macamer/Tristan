@@ -26,7 +26,7 @@ html body {
     margin-left: 1em;
     margin-right: 1em;
     text-align: justify;
-    align-items: center;
+    margin-top: 0;
     width: 90%;
   }
 
@@ -137,7 +137,39 @@ li a:hover{
 /*fin del navegador*/
 
 
-/*----ESCULTURAS---*/
+/*imagenes sobre mi*/
+
+.flexbox{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1em;
+}
+div.text2{
+  padding-right: 2em;
+  padding-left: 2em;
+}
+.imagen{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.imagen img{
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+img{
+  max-width: 100%;
+}
+.imagen{
+  width: 80%;
+}
+.texto{
+  width: 20%;
+}
+
+/*----GALERIA---*/
 
 #titulo{
     padding-top: 4em;
@@ -145,64 +177,9 @@ li a:hover{
 /*galeria*/
 
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3em;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .image-container:hover {
-    transform: scale(1.1);
-  }
-  
-  .image-description {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 20px;
-    display: none;
-  }
-  
-  .image-description p {
-    margin: 0;
-  }
-  
-  .image-description.active {
-    display: block;
-  }
-
-
-
-
-
-
-
-
-
 /*--FLECHA--*/
 .scroll-to-top {
-  display: none;
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -218,15 +195,11 @@ li a:hover{
     transform: scale(0); /* Agregamos una escala inicial de 0 para que esté oculto */
     transition: transform 0.3s ease; /* Añadimos una transición para la animación */
   }
-i>img{
-  width: 2em;
-  height: 2em;
-}
 
-.scroll-to-top.show {
-  display: block;
-  transform: scale(1); /* Escala de 1 para mostrar el botón completo */
-}
+  .scroll-to-top.show {
+    display: block;
+    transform: scale(1); /* Escala de 1 para mostrar el botón completo */
+  }
 
 
 /*final*/
@@ -236,6 +209,7 @@ footer{
     color: black;
     padding-left: 2em;
     margin-bottom: 2em;
+    position: absolute;
 
 }
 
@@ -266,19 +240,27 @@ footer{
         max-width: 100%; /* Esto asegura que el ancho no supere el tamaño del contenedor */
         max-height: 100%; /* Esto asegura que la altura no supere el tamaño del contenedor */
       }
-    .flexbox{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding: 1em;
-    }
-
-    .firma{
+      .firma{
         width: 90%;
         margin: 0;
         padding: 0;
         max-width: 100%;
         max-height: 100%;
     }
+
+    .flexbox{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    .imagen{
+      width: 60%;
+    }
+    .texto{
+      width: 40%;
+    }
+
+
 
 }

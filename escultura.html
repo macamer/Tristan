@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/escultura.css"/>
                 <!-- poner icono en la pestaña -->
         <link rel="icon" href="images/firma.svg"/>
+        
     </head>
     
 
@@ -62,7 +63,7 @@
                         <img src="images/dunar.JPG" alt="Imagen 2">
                       </div>
                       <div class="image-container" data-description="Descripción de la imagen 3">
-                        <img src="images/dunar1.JPG" alt="Imagen 2">
+                        <a href="galeria/duna1.html"><img src="images/dunar1.JPG" alt="Imagen 2"></a>
                       </div>
                     <!-- Agrega más imágenes aquí -->
                   </div>
@@ -72,6 +73,28 @@
                   </div>
                 
             </article>
+            <article>
+            <h3>DUNA DUNAR</h3>
+            <div class="gallery">
+                <div class="image-container" data-description="Duna Dunar">
+                  <img src="images/_MG_1486.JPG" alt="Imagen 1">
+                </div>
+                <div class="image-container" data-description="Duna Dunar 2">
+                  <img src="images/_MG_1489.JPG" alt="Imagen 2">
+                </div>
+                <div class="image-container" data-description="Descripción de la imagen 3">
+                    <img src="images/dunar.JPG" alt="Imagen 2">
+                  </div>
+                  <div class="image-container" data-description="Descripción de la imagen 3">
+                    <a href="galeria/duna1.html"><img src="images/dunar1.JPG" alt="Imagen 2"></a>
+                  </div>
+                <!-- Agrega más imágenes aquí -->
+              </div>
+            
+              <div class="image-description">
+                <p id="description-text">Duna lunar</p>
+              </div>
+            </article>
         </header>
         
 
@@ -80,7 +103,7 @@
 
         <!--FLECHA PARA INICIO-->
         <div class="scroll-to-top">
-            <i class="fas fa-arrow-up"> <img src="images/flecha2.svg" alt="flecha"></i>
+            <i class="fas fa-arrow-up"> <img src="images/flecha2.svg" alt="flecha"/></i>
         </div>
 
         <div>
@@ -100,22 +123,22 @@
         </script>
 
 <!--flecha a inicio-->
-        <script>
-            window.addEventListener('scroll', function() {
-            var scrollToTopBtn = document.querySelector('.scroll-to-top');
-            if (window.scrollY > 200) {
-                scrollToTopBtn.classList.add('show');
-            } else {
-                scrollToTopBtn.classList.remove('show');
-            }
-            });
-            document.querySelector('.scroll-to-top').addEventListener('click', function() {
-                window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-                });
-            });
-        </script>
+<script>
+    window.addEventListener('scroll', function() {
+      var scrollToTopBtn = document.querySelector('.scroll-to-top');
+      if (window.scrollY > 200) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+    });
+    document.querySelector('.scroll-to-top').addEventListener('click', function() {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+    });
+  </script>
         
        
 

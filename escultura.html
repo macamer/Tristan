@@ -46,52 +46,42 @@
         <header id="tristan"> 
             <article>
                 <h2 id="titulo">ESCULTURAS</h2>
-                <section> 
-                    <div class="flexbox">
-                        <div class="texto">
-                            <p>Nacido en Valencia capital. Tristan Tomás, desde temprana edad ya tenía inquietudes para las artesanías.
-                            </br> En su casa siempre le enseñaron el valor de los objetos únicos y hechos a mano.</p>
-                        <p>Al terminar el instituto decidió que su camino iba a ser los material lígneos, por ello se matriculó 
-                            en el grado superior de <i>Desarrollo de productos de carpintería y mueble.</i> 
-                            </br> A continuación hizo la <i>Especialización Profesional en Industrias de Madera y Mueble</i> 
-                            en el Instituto Tecnológico de Mueble, Madera, Embalaje y Afines, impartido por AIDIMA. </p>               
-
-                        </div>
-                        <div class="imagenes">
-
-                            
-
-                            
-                        </div>
-
-                        
+                <p>Para la creación de las obras exiten una variedad de 
+                    colecciones con diferentes técnicas escultóricas en 
+                    las que el artista ha querido experimentar tanto con 
+                    las formas como las texturas.</p><br>
+                <h3>DUNA DUNAR</h3>
+                <div class="gallery">
+                    <div class="image-container" data-description="Duna Dunar">
+                      <img src="images/_MG_1486.JPG" alt="Imagen 1">
                     </div>
-                    <div class="text2">
-                    <p>En el 2011 decidió que debía ampliar sus conocimientos y estudió el <i>Grado en Conservación y Restauració de Bienes Culturales</i> en 
-                        la Universidad Politécnica de Valencia. Gracias a la carrera pudo profundizar en las técnicas y materiales como cerámica, piedra y metales. 
-                        Desde entonces ha podido trabajar en varios proyectos de restauración.</p>
-                        <p>También ha sido profesor adjunto de restauración de mobiliario en <i>Gaia</i>. Y también realiza puntualmente la clase de Asienteos de Enea, del curso impartido en <i>Acanthus</i> </p>
-                        <p>En <i>Acanthus</i> estuvo trabajando en la restauración de materiales etnologícos, pétreos y lígneos de varias tipologías y técnicas.Aunque en los últimos años ha estado trabajado para 
-                        a empresa <i>EMR</i> en la fuente de los Luceros de Alicante, y actualmente se encuentra en los Santos Juanes de Valencia. Una de las iglesias más iconícas de la ciudad
-                    que fué afectada por varios sucesos que provocaron que estuviera en un estado de conservación bastante deficiente. </p> 
-                    <p>Intenta encontrar tiempo mientras trabaja en la restauración de patrimonio para la creación artística, ya que es
-                        una actividad que le permite explaiarse y descargar toda su creatividad y conocimiento. 
-                    </p>
-                </div>
-                </section>
+                    <div class="image-container" data-description="Duna Dunar 2">
+                      <img src="images/_MG_1489.JPG" alt="Imagen 2">
+                    </div>
+                    <div class="image-container" data-description="Descripción de la imagen 3">
+                        <img src="images/dunar.JPG" alt="Imagen 2">
+                      </div>
+                      <div class="image-container" data-description="Descripción de la imagen 3">
+                        <img src="images/dunar1.JPG" alt="Imagen 2">
+                      </div>
+                    <!-- Agrega más imágenes aquí -->
+                  </div>
+                
+                  <div class="image-description">
+                    <p id="description-text">Duna lunar</p>
+                  </div>
+                
             </article>
         </header>
         
 
-        <div class="photos-artista">
-            <div class="dunar">
-                <img src="images/dunar.JPG" alt="esculturadunar"/>
-            </div>
-            <div class="dunar2">
-                <img src="images/dunar1.JPG" alt="esculturadunar"/>
-            </div>
-        </div>
         
+
+
+        <!--FLECHA PARA INICIO-->
+        <div class="scroll-to-top">
+            <i class="fas fa-arrow-up"> <img src="images/flecha2.svg" alt="flecha"></i>
+        </div>
 
         <div>
         <footer>Designed and edited by Maria Cavaller 2023</footer>
@@ -105,6 +95,24 @@
                     // Oculta automáticamente la lista de elementos al hacer clic
                     const menuToggle = document.getElementById('menu-toggle');
                     menuToggle.checked = false;
+                });
+            });
+        </script>
+
+<!--flecha a inicio-->
+        <script>
+            window.addEventListener('scroll', function() {
+            var scrollToTopBtn = document.querySelector('.scroll-to-top');
+            if (window.scrollY > 200) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+            });
+            document.querySelector('.scroll-to-top').addEventListener('click', function() {
+                window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
                 });
             });
         </script>

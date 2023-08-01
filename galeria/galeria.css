@@ -5,8 +5,7 @@
 body{
     font-family:  'Montserrat', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-    background-color: rgb(228, 222, 222);
-}
+  }
 /* RESET CSS */
 
 html body {
@@ -18,9 +17,12 @@ html body {
     margin: 0;
     padding: 0;
   }
-  h2, h3{
+  h2{
     padding-left: 1em;
-    margin-right: 1em;
+    font-size: 1.7em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   #titulo{
     padding-top: 4em;
@@ -38,6 +40,13 @@ html body {
     color: initial;
     text-decoration: none;
     margin: 0;
+  }
+  .texto{
+    padding: 2em;
+  
+  }
+  .description{
+    font-size: 1.2em;
   }
 
 /*NAVEGADOR*/
@@ -139,44 +148,8 @@ li a:hover{
 
 /*fin del navegador*/
 
+/*--LIGHT SLIDER--*/
 
-/*DESCRIPCION Y FOTO
-
-.flexbox{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 1em;
-}
-div.text2{
-  padding-right: 2em;
-  padding-left: 2em;
-}
-.imagen{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.imagen img{
-  max-width: 100%;
-  margin-bottom: 1em;
-}
-img{
-  max-width: 100%;
-}
-.imagen{
-  width: 80%;
-}
-
-*/
-
-
-/*----PRUEBA---*/
-
-.demo {
-  width:450px;
-}
 ul {
   list-style: none outside none;
   padding-left: 0;
@@ -185,23 +158,47 @@ ul {
 li {
   display: block;
   float: left;
+  margin-top: 0;
   margin-right: 6px;
   cursor:pointer;
 }
-img {
-  display: block;
-  height: auto;
+#slider{
+    max-width: 60%; /* Ancho máximo del contenedor */
+    margin: 0 auto; 
+}
+li>img {
   max-width: 100%;
+  max-height: 100%;
+  height: auto; /* Ajustar la altura proporcionalmente */
+  display: block; /* Eliminar espacios debajo de las imágenes */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+.lSGallery li {
+  height: 4em; /* Altura de cada miniatura */
+  align-items: center;
+  overflow: hidden; /* Ocultar contenido que exceda el tamaño */
 }
 
-.texto{
-  padding: 2em;
-
-}
-.description{
-  font-size: 1.2em;
+.lSGallery img {
+  width: 100%; /* Hacer que las imágenes en miniatura ocupen todo el espacio disponible */
+  height: 100%; /* Ajustar la altura proporcionalmente */
+  object-fit: cover; /* Ajustar la imagen para cubrir completamente el área de la miniatura */
 }
 
+
+.lSAction > .lSPrev {
+  background-image: url("../images/arrow-prev.svg");
+  background-position: left center;
+  background-size: contain;
+  /* Agregar estilos adicionales según sea necesario */
+}
+
+.lSAction > .lSNext {
+  background-image: url("../images/arrow-next.svg");
+  background-position: right center;
+  background-size: contain;
+  /* Agregar estilos adicionales según sea necesario */
+}
 
 
 /*--FLECHA--*/
@@ -278,6 +275,10 @@ footer{
       width: 90%;
     }
 
+    #slider{
+      max-width: 100%; /* Ancho máximo del contenedor */
+      margin: 0; 
+  }
 
 
 }

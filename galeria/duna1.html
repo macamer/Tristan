@@ -5,10 +5,16 @@
     <head>
         <title>Tristan</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
+        <!--
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//sachinchoolur.github.io/lightslider/dist/js/lightslider.js"></script>
+        <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="galeria.css"/>
                 <!-- poner icono en la pestaña -->
-        <link rel="icon" href="images/firma.svg"/>
+        <link rel="icon" href="../images/firma.svg"/>
     </head>
     
 
@@ -47,11 +53,80 @@
             <article>
                 <h2 id="titulo">DUNA DUNAR I</h2>
                 <section> 
+                    <div class="ISSlideOuter">
+                        <div class="lSSlideWrapper usingCss" style="transition-duration: 400ms; transition-timing-function: ease;">
+                            <ul id="lightSlider" class="lightSlider lsGrab lSSlide" style="width: 6300px; height: 321px; padding-bottom: 0%; transform: translate3d(-2700px, 0px, 0px);">
+                                <li data-thumb="../galeria/images/dunar.JPG" class="lslide" style="width: 450px; margin-right: 0px;">
+                                    <img src="../galeria/images/dunar.JPG">
+                                </li>
+                                <li data-thumb="../galeria/images/dunar1.JPG" class="lslide" style="width: 450px; margin-right: 0px;">
+                                    <img src="../galeria/images/dunar1.JPG">
+                                </li>
+                                <li data-thumb="../galeria/images/dunarI_expo.JPG" class="lslide" style="width: 450px; margin-right: 0px;">
+                                    <img src="../galeria/images/dunarI_expo.JPG">
+                                </li>
+                                <li data-thumb="../galeria/images/dunarI_expo2.JPG" class="lslide" style="width: 450px; margin-right: 0px;">
+                                    <img src="../galeria/images/dunarI_expo2.JPG">
+                                </li>
+                                <li data-thumb="../galeria/images/dunar_expo.jpg" class="lslide" style="width: 450px; margin-right: 0px;">
+                                <img src="../galeria/images/dunar_expo.jpg">
+                                </li>
+                            </ul>                
+                        </div>
+                   
+<!--
+                        <div class="lSAction"><a class="lSPrev"></a><a class="lSNext"></a></div>
+                   
+                   <ul class="lSPager lSGallery" style="margin-top: 5px; transition-duration: 400ms; width: 607.167px; transform: translate3d(-50.5556px, 0px, 0px);"><li style="width:100%;width:45.55555555555556px;margin-right:5px" class=""><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg"></a></li><li style="width:100%;width:45.55555555555556px;margin-right:5px"><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg"></a></li><li style="width:100%;width:45.55555555555556px;margin-right:5px"><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-3.jpg"></a></li><li style="width:100%;width:45.55555555555556px;margin-right:5px"><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-4.jpg"></a></li><li style="width:100%;width:45.55555555555556px;margin-right:5px"><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-5.jpg"></a></li><li style="width:100%;width:45.55555555555556px;margin-right:5px" class="active"><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-6.jpg"></a></li><li style="width:100%;width:45.55555555555556px;margin-right:5px"><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-7.jpg"></a></li><li style="width:100%;width:45.55555555555556px;margin-right:5px"><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-8.jpg"></a></li><li style="width:100%;width:45.55555555555556px;margin-right:5px"><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-9.jpg"></a></li><li style="width:100%;width:45.55555555555556px;margin-right:5px"><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-10.jpg"></a></li><li style="width:100%;width:45.55555555555556px;margin-right:5px"><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-11.jpg"></a></li><li style="width:100%;width:45.55555555555556px;margin-right:5px"><a href="#"><img src="https://sachinchoolur.github.io/lightslider/img/thumb/cS-13.jpg"></a></li></ul>
+                   
+                        <div class="demo">
+                        <ul id="lightSlider">
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
+                            </li>
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-2.jpg" />
+                            </li>
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-3.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-3.jpg" />
+                            </li>
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-4.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-4.jpg" />
+                            </li>
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-5.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-5.jpg" />
+                            </li>
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-6.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-6.jpg" />
+                            </li>
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-7.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-7.jpg" />
+                            </li>
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-8.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-8.jpg" />
+                            </li>
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-9.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-9.jpg" />
+                            </li>
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-10.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-10.jpg" />
+                            </li>
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-11.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-12.jpg" />
+                            </li>
+                            <li class="image-item" data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-13.jpg">
+                                <img class="image" src="https://sachinchoolur.github.io/lightslider/img/cS-13.jpg" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
                     <div class="flexbox">
                         <div class="imagen">
                             <img src="images/dunar1.JPG" alt="trabajando"/>
                             
                         </div>
+                         -->
                         <div class="texto">
                             <p>Modelado con ceniza</p>
                             <p>32 x 43 cm</p>
@@ -63,20 +138,21 @@
                         </p>                
             </article>
         </header>
-        
-
+       
+    
         
 
 
         <!--FLECHA PARA INICIO-->
         <div class="scroll-to-top">
-            <i class="fas fa-arrow-up"> <img src="images/flecha2.svg" alt="flecha"></i>
+            <i class="fas fa-arrow-up"> <img src="../images/flecha2.svg" alt="flecha"></i>
         </div>
 
         <div>
         <footer>Designed and edited by Maria Cavaller 2023</footer>
         </div>
 
+<!--ocultar menu al clicar-->
         <script>
             // Escucha el evento de clic en los elementos del menú
             const menuItems = document.querySelectorAll('.nav-menu__item');
@@ -106,7 +182,21 @@
                 });
             });
         </script>
-        
+
+<!--lightSlider-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+        <script>
+            $(document).ready(function() {
+            $('#lightSlider').lightSlider({
+                gallery: true,
+                item: 1,
+                loop: true,
+                slideMargin: 0,
+                thumbItem: 9
+            });
+            });
+        </script>
        
 
     </body>

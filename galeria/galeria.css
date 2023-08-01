@@ -168,9 +168,7 @@ img{
 .imagen{
   width: 80%;
 }
-.texto{
-  width: 20%;
-}
+
 */
 
 
@@ -196,28 +194,13 @@ img {
   max-width: 100%;
 }
 
+.texto{
+  padding: 2em;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.description{
+  font-size: 1.2em;
+}
 
 
 
@@ -249,12 +232,11 @@ img {
 /*final*/
 footer{
     font-size: 80%;
-    bottom: 1em;
+    bottom: 0;
     color: black;
     padding-left: 2em;
     margin-bottom: 2em;
-    position: absolute;
-
+    position: relative;
 }
 
 /*MOBIL*/
@@ -292,17 +274,8 @@ footer{
         max-height: 100%;
     }
 
-    .flexbox{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding: 1em;
-    }
-    .imagen{
-      width: 60%;
-    }
     .texto{
-      width: 40%;
+      width: 90%;
     }
 
 

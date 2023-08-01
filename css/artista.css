@@ -29,6 +29,8 @@ html body {
     margin-right: 1em;
     text-align: justify;
     margin-top: 0;
+    font-size: 1em;
+    line-height: 2em;
   }
 
   /*quitar estilo a los enlaces*/
@@ -172,10 +174,11 @@ div.text2{
 
 }
 .imagenes img{
-    max-width: 100%;
+    max-width: auto;
     margin-bottom: 1em;
+    height: 20em;
 }
-img{
+.dunar>img{
     max-width: 100%;
 }
 
@@ -230,6 +233,10 @@ footer{
         font-size: 70%;
         padding-right: 1em;
     }
+    p{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
 
     .topbar{
         display: flex;
@@ -269,6 +276,11 @@ footer{
         padding: 0;
         max-width: 100%;
         max-height: 100%;
+    }
+    .imagenes img{
+        max-width: 100%;
+        margin-bottom: 1em;
+        height: auto;
     }
 
 }

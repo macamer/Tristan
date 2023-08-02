@@ -12,6 +12,11 @@ body, html{
     top: 0;
     left: 0;
     overflow: hidden;
+    min-height: 100vh;
+}
+body{
+  display: flex;
+  flex-direction: column;
 }
 /* RESET CSS */
 
@@ -65,7 +70,7 @@ nav a{
 .nav-menu__item{
     margin: 0 1rem;
     overflow: hidden;
-    background-color: rgb(255, 255, 255, 0.85);
+    background-color: rgb(255, 255, 255, 0.6);
     text-decoration: none;
 }
 li a{
@@ -210,21 +215,56 @@ body, html:before {
   
 /*final*/
 footer{
-    text-align:left;
+    
     bottom: 0;
-    position: absolute;
     color: black;
-    margin-left: 2em;
+    margin-left: 1em;
     margin-top: 2em;
     margin-bottom: 1em;
+    position: fixed; /* Hacer que el footer tenga una posición fija en la pantalla */
+    bottom: 0; /* Colocar el footer en la parte inferior de la ventana */
+    width: 100%;
 }
 
 /*MOBIL*/
 @media (max-width:768px) {
+  .flexbox {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Alinea los elementos verticalmente */
+    flex-wrap: wrap; 
+  }
+  
+  h1, i, b, .redes, footer{
+    text-align: right;
+  }
+
+  header{
+    padding-right: 3em;
+  }
     footer{
-        font-size: 70%;
-        padding-right: 1em;
+      font-size: 70%;
+      padding: 1em 1em;
+      position: fixed; /* Hacer que el footer tenga una posición fija en la pantalla */
+      bottom: 0; /* Colocar el footer en la parte inferior de la ventana */
+      right: 0; /* Colocar el footer en la esquina derecha de la ventana */
+      width: 100%;
+    }  
+    .redes-container {
+      display: flex;
+      justify-content: flex-end;
     }
+  
+    .redes {
+      width: 100%;
+      position: fixed;
+      right: 2em;
+    }
+  
+    .redes a {
+      margin-left: 10px; /* Espaciado entre los elementos <a> en horizontal */
+    }
+  
     html{
         background-image: url(../images/INICIO2.jpg);
         background-size: cover;
@@ -260,5 +300,4 @@ footer{
       margin: 1em;
       margin-top: 1em;
     }
-
-}
+  }

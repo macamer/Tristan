@@ -9,12 +9,13 @@ html body{
     left: 0;
     overflow: hidden;
     min-height: 100vh;
-}
-.imagen_fondo{
     background-image: url(../images/INICIO2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.imagen_fondo{
+    
     height: 100vh;
 }
 /* RESET CSS */

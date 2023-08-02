@@ -2,14 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
-body{
+body, html{
     font-family:  'Montserrat', Arial, Helvetica, sans-serif;
     background-image: url(../images/INICIO2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    overflow-x: hidden;
+    top: 0;
+    left: 0;
 }
 /* RESET CSS */
 
@@ -39,13 +40,13 @@ html body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    /*background-color: #e6dfcb;*/
+    position:initial;
     height: 3em;
-
     width: 100%;
     transition: background-color 0.3s ease-in-out;
     z-index: 1;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 nav-menu {
@@ -91,6 +92,7 @@ li a:hover{
 .firma{
     width: 20em;
     margin-left: 1em;
+
 }
 
 .menu-button-container {
@@ -140,47 +142,45 @@ li a:hover{
 }
 
 /*imagenes sobre mi*/
-body:before {
+body, html:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(40, 40, 45, 0.8);
+    background: rgb(250, 250, 250, 0.2);
     width: 100%;
     height: 100%;
     z-index: -1
   }
   h1 {
     width: 100%;
-    margin: 40vh 0 3vh 0;
+    margin: 40vh 0 3vh 2vh;
     font-weight: 100;
-    font-size: 3em;
     transition:all 0.4s;
-    
+    font-size: 3em;
+   
   }
   h1:hover{
-    color:#08c
+    color:rgb(68, 29, 13);
+    font-weight: 800;
   }
-  i {
+  i, b {
     display: block;
     width: 100%;
     margin-bottom: 4vh;
-    font-size:1em
+    font-size:1em;
+    margin-left: 2vh;
   }
-  
+
   .fa {
     display: inline-block;  
-    color: inherit;
-    border:1px solid;
     text-decoration: none;
     padding-top: 12px;
-    width: 40px;
-    height: 40px;
+    width: 2em;
+    height: 2em;
     text-align: center;
-    border-radius: 20%;
     box-sizing: border-box;
-    margin-left: 1em;
-    background: rgba(0, 0, 0, 0);
+    margin-left: 2em;
     transition: all 0.4s;
   }
   
@@ -194,26 +194,26 @@ body:before {
     background-image: url('../images/instagram.svg'); /* Ruta a tu imagen de icono */
     background-size: cover; /* Ajustar el tamaño del icono */
   }
-  .fa:hover {
-    color: #05a;  
-    border-color:inherit;
-    background: rgba(0, 0, 0, 0.5);
+  .fa:hover { 
+    filter: invert(100%);
+    background: rgba(241, 239, 99, 0.8);
+    border-radius: 20%; 
   }
   .fa:nth-of-type(2):hover {
-    color: #d19;
-    border-color:inherit
-    
+    filter: invert(100%);  
+    background: rgba(43, 219, 190, 0.8); 
+    border-radius: 20%; 
   }
   
   
 /*final*/
 footer{
     text-align:right;
-    bottom: 1em;
+    bottom: 0;
     color: black;
     padding-left: 2em;
     margin-bottom: 2em;
-
+    position: fixed;
 }
 
 /*MOBIL*/
@@ -222,13 +222,21 @@ footer{
         font-size: 70%;
         padding-right: 1em;
     }
+    html{
+        background-image: url(../images/INICIO2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        max-height: 100%;
+        max-width: 100%; /* Esto asegura que el ancho no supere el tamaño del contenedor */
+        max-height: 100%;
+    }
     .topbar{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        position: absolute;
-        /*background-color: #e6dfcb;*/
         height: 3em;
         padding: 0;
         padding-left: 1em;

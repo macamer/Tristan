@@ -82,6 +82,7 @@ li a{
 }
 li a:hover{
     font-size: 150%;
+    transition: all 0.3s;
 }
 
 /*ocultar cuadrado seleccionador*/
@@ -93,7 +94,6 @@ li a:hover{
     cursor: pointer;
     outline: 0;
     width: 30em;
-   
 }
 /*ICONOS*/
 #icon-home{
@@ -101,6 +101,7 @@ li a:hover{
     /*width: 3em; */
     margin-top: 5em;
     margin-left: 1em;
+    transition: all 0.4s;
 }
 /*
 .firma{
@@ -238,6 +239,21 @@ footer{
  /*FIRMA*/
 #icon-home {
     width: 70%;
+    opacity: 0; /* Inicia con opacidad 0 para que el icono esté oculto al principio */
+  transform: scale(0); /* Inicia con escala 0 para que el icono esté oculto al principio */
+  animation: appearAndPlace cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-out forwards; /* Aplica la animación */
+}
+
+/* Define la animación */
+@keyframes appearAndPlace {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 #icon-home:hover {
     cursor: pointer;
@@ -300,9 +316,26 @@ footer{
      /*FIRMA*/
     #icon-home {
         width: 50%;
-    }
+        opacity: 0; /* Inicia con opacidad 0 para que el icono esté oculto al principio */
+        transform: scale(0); /* Inicia con escala 0 para que el icono esté oculto al principio */
+        animation: appearAndPlace cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-out forwards; /* Aplica la animación */
+      }
+      
+      /* Define la animación */
+      @keyframes appearAndPlace {
+        0% {
+          opacity: 0;
+          transform: scale(0);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    
 footer>b{
     font-size: 5%;
 }
+
 
 }

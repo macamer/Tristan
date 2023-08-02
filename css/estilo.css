@@ -255,6 +255,11 @@ footer{
     transform: scale(1);
   }
 }
+
+.icon.fallback {
+    opacity: 1; /* Muestra el icono de la alternativa directamente */
+    transform: scale(1); /* Muestra el icono de la alternativa directamente */
+  }
 #icon-home:hover {
     cursor: pointer;
     outline: 0;
@@ -331,6 +336,10 @@ footer{
           opacity: 1;
           transform: scale(1);
         }
+      }
+      #icon-home.fallback {
+        opacity: 1; /* Muestra el icono de la alternativa directamente */
+        transform: scale(1); /* Muestra el icono de la alternativa directamente */
       }
     
 footer>b{

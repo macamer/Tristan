@@ -301,6 +301,8 @@ footer{
     #icon-home {
         width: 50%;
     }
-
+footer>b{
+    font-size: 5%;
+}
 
 }

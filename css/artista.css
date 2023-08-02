@@ -210,7 +210,10 @@ div.text2{
     transform: scale(0); /* Agregamos una escala inicial de 0 para que esté oculto */
     transition: transform 0.3s ease; /* Añadimos una transición para la animación */
   }
-
+  i>img{
+    width: 2em;
+    height: 2em;
+  }
   .scroll-to-top.show {
     display: block;
     transform: scale(1); /* Escala de 1 para mostrar el botón completo */

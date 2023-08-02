@@ -169,7 +169,7 @@ footer{
 }
 
 /*MOBIL*/
-@media (max-width:768px) {
+@media (max-width:768px) and (orientation: portrait) {
     footer{
         font-size: 70%;
     }
@@ -242,8 +242,69 @@ footer{
 #icon-home:hover {
     cursor: pointer;
     outline: 0;
-    width: 80%;
-       
+    width: 80%;      
 }
     
+}
+@media (max-width: 768px) and (orientation: landscape) {
+        .menu-button-container {
+        display: flex; 
+    }
+    .nav-menu {
+        position: absolute;
+        top: 2.1em;
+        left: 0;
+        width: 100vw;
+       
+    }
+    .nav-menu__item {
+        text-decoration: none;
+        font-weight: bold;
+    }
+    /*oculta*/
+    #menu-toggle~.nav-menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        /*se pliega a un 40% de distancia*/
+        margin-left: 40%;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked~.nav-menu li {
+        height: 3em;
+        margin-left: 50%;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .nav-menu>li {
+        display: flex;
+        margin: 0;
+        padding: 1em 0;
+        width: 40%;
+        margin-left: 2em;
+        justify-content: flex-end; /* Alinea los elementos en el lado derecho */
+        text-align: right;
+    }
+    
+    .nav-menu>ul {
+        display: flex;
+        margin-top: 3em; /* Agrega un margen de 10em desde arriba */
+    }
+    .point{
+        color: white;
+        font-weight: 500;
+    }
+    
+     /*FIRMA*/
+    #icon-home {
+        width: 50%;
+    }
+    #icon-home:hover {
+        cursor: pointer;
+        outline: 0;
+        width: 70%;  
+    }
+
+
 }

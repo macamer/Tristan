@@ -241,7 +241,7 @@ footer{
     width: 70%;
     opacity: 0; /* Inicia con opacidad 0 para que el icono esté oculto al principio */
   transform: scale(0); /* Inicia con escala 0 para que el icono esté oculto al principio */
-  animation: appearAndPlace cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-out forwards; /* Aplica la animación */
+  transition: opacity 2s ease-out, transform 2s ease-out;
 }
 
 /* Define la animación */
@@ -323,7 +323,7 @@ footer{
         width: 50%;
         opacity: 0; /* Inicia con opacidad 0 para que el icono esté oculto al principio */
         transform: scale(0); /* Inicia con escala 0 para que el icono esté oculto al principio */
-        animation: appearAndPlace cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-out forwards; /* Aplica la animación */
+        transition: opacity 1s ease-out, transform 1s ease-out;
       }
       
       /* Define la animación */

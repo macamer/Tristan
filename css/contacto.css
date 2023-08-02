@@ -260,9 +260,9 @@ footer{
       position: fixed;
       right: 2em;
     }
-  
-    .redes a {
-      margin-left: 10px; /* Espaciado entre los elementos <a> en horizontal */
+    h1 {
+      font-size: 2.3em;
+     
     }
   
     html{

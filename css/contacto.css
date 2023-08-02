@@ -229,10 +229,17 @@ footer{
 /*MOBIL*/
 @media (max-width:768px) {
   .flexbox {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; /* Alinea los elementos verticalmente */
-    flex-wrap: wrap; 
+    display: -webkit-box; /* Para Safari 6.1 - 9 */
+    display: -webkit-flex; /* Para Safari 6.1 - 9 */
+    display: flex; /* Para navegadores modernos */
+    -webkit-flex-direction: row; /* Para Safari 6.1 - 9 */
+    flex-direction: row; /* Para navegadores modernos */
+    -webkit-justify-content: space-between; /* Para Safari 6.1 - 9 */
+    justify-content: space-between; /* Para navegadores modernos */
+    -webkit-align-items: center; /* Para Safari 6.1 - 9 */
+    align-items: center; /* Para navegadores modernos */
+    -webkit-flex-wrap: wrap; /* Para Safari 6.1 - 9 */
+    flex-wrap: wrap; /* Para navegadores modernos */
   }
   
   h1, i, b, .redes, footer{

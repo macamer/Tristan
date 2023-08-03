@@ -45,7 +45,9 @@
         
         <header id="tristan"> 
             <article>
+                <div id="contenedor">
                 <h2 id="titulo">TRISTAN TOMÁS</h2>
+                </div>
                 <section> 
                     <div class="flexbox">
                         <div class="texto">
@@ -123,6 +125,31 @@
                 top: 0,
                 behavior: 'smooth'
                 });
+            });
+
+            $(document).ready(function() {
+            // Intentar agregar la clase que activa la animación
+            $("h2").addClass("active");
+
+            // Verificar si la animación se aplicó correctamente
+            var animationSupported = false;
+            var animationDuration = 1000; // Duración de la animación en milisegundos (1 segundo)
+
+            // Comprobar si la animación es compatible con el navegador
+            var testElement = document.createElement("div");
+            if ("animation" in testElement.style || "webkitAnimation" in testElement.style) {
+                animationSupported = true;
+            }
+
+            // Verificar si la animación se completó
+            setTimeout(function() {
+                if (!$("h2").hasClass("active")) {
+                // Si la animación no se aplicó correctamente, mostrar el texto de todas formas
+                $("h2").css("opacity", "1");
+                $("h2").css("transform", "translateY(0)");
+                }
+            }, animationDuration);
+
             });
           </script>
        

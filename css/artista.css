@@ -19,11 +19,27 @@ html body {
     margin: 0;
     padding: 0;
   }
+  #contenedor{
+    
+    overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+    height: 10em; /* Altura de la caja contenedora, ajusta según tus necesidades */
+}
   h2{
-    padding-left: 1em;
-    margin-right: 1em;
-
+    padding-left: 1em ;
+    opacity: 0; /* Hacer que el texto esté inicialmente oculto */
+    animation: fadeIn 1s ease forwards;
   }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
   p{
     margin-left: 1em;
     margin-right: 1em;
@@ -31,6 +47,7 @@ html body {
     margin-top: 0;
     font-size: 1em;
     line-height: 2em;
+    transition:all 1s ease-in-out;
   }
 
   /*quitar estilo a los enlaces*/

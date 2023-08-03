@@ -78,7 +78,7 @@ nav a{
 .nav-menu__item{
     margin: 0 1rem;
     overflow: hidden;
-    background-color: rgb(228, 222, 222, 0.85);
+    background-color: rgb(255, 255, 255, 0.8);
     text-decoration: none;
 }
 li a{

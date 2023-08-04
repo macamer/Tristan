@@ -194,7 +194,6 @@ li a:hover{
 }
 img{
     max-width: 100%;
-    margin-right: 2em;
 }
 
 .modal {
@@ -257,6 +256,7 @@ img{
     border-style: none;
     background-color: none;
     color: none;
+    background-color: transparent;
  }
 
   /* Estilo opcional para ocultar el contenedor del video inicialmente */
@@ -322,7 +322,7 @@ footer{
     .image{
         flex: 1;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
         
     }

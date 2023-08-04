@@ -182,7 +182,7 @@ li a:hover{
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     
 }
 .image>img{
@@ -254,8 +254,6 @@ img{
     width: 3em;
     text-decoration: none;
     border-style: none;
-    background-color: none;
-    color: none;
     background-color: transparent;
  }
 
@@ -361,10 +359,7 @@ footer{
       }
      #playButton{
         width: 3em;
-        text-decoration: none;
         border-style: none;
-        background-color: none;
-        color: none;
      }
     
       /* Estilo opcional para ocultar el contenedor del video inicialmente */

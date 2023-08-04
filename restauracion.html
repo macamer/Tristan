@@ -14,7 +14,7 @@
 
 
     <body id="page-top" class="page-top">  
-            
+        <div class="body">   
         <div id="barra" class="topbar">
             <input type="checkbox" name="Menu" id="menu-toggle" />
             <label class="menu-button-container" for="menu-toggle">
@@ -45,73 +45,54 @@
         
         <header id="tristan"> 
             <article>
-                <h1 id="titulo">RESTAURACION DE ARTE</h1>
-                <section> 
+                <h1 id="titulo">RESTAURACIÓN DE ARTE</h1>
                     <p>Los amantes del arte saben que para que se mantenga eterno debe tenerse en cuenta que el material se degrada. Por ello es muy importante su convservación y mantenimiento para dar longevidad al patrimonio. </p>
-                    
+                <section> 
                     <h2>PIEDRA Y MADERA</h2>
                     <p>Estos dos materiales son los que más experiencia se ha podido desarrollar.</p>
-
-
-                    <h3 style="padding: 2em;">PAGINA EN PROCESO</h3>
-                    <div style="text-align: center;">
-                    <img src="images/waiting.svg" alt="waiting" style="width: 20%; padding-top: 1em;">
-                </div>
-
-
-
-                    <!--
-
-                    <div class="flexbox">
-                        <div class="texto">
-                            <p>Nacido en Valencia capital. Tristan Tomás, desde temprana edad ya tenía inquietudes para las artesanías.
-                            </br> En su casa siempre le enseñaron el valor de los objetos únicos y hechos a mano.</p>
-                        <p>Al terminar el instituto decidió que su camino iba a ser los material lígneos, por ello se matriculó 
-                            en el grado superior de <i>Desarrollo de productos de carpintería y mueble.</i> 
-                            </br> A continuación hizo la <i>Especialización Profesional en Industrias de Madera y Mueble</i> 
-                            en el Instituto Tecnológico de Mueble, Madera, Embalaje y Afines, impartido por AIDIMA. </p>               
-
+                    
+                    <h2>ASIENTOS ENEA</h2>
+                    <div class="contenedor">
+                        <div class="image">
+                            <img id="imagen-cambiante" src="images/enea.JPG" alt="enea">
                         </div>
-                        <div class="imagenes">
-
+                        <div class="description">
+                            <p>Realización puntual de clases de enea. Además de realización por encargo de asientos de este material. En una técnica poco practicada, en la que los artesanos y la material prima están escaseando. Para la perdurabilidad de la técnica se debe prácticar y transmitir para que caiga en desuso.</p>
                             
-
                             
+                            <button id="playButton">
+                                <img src="images/arrow-next.svg" alt="Icono de reproducción">
+                              </button>
+                            
+                              <div id="videoModal" class="modal">
+                                <div class="modal-content">
+                                  <span class="close-button" id="closeButton">&times;</span>
+                                  <video controls id="videoPlayer">
+                                    <source src="media/enea.mp4" type="video/mp4">
+                                    Tu navegador no soporta la reproducción de video.
+                                  </video>
+                                </div>
+                              </div>
                         </div>
 
-                        
                     </div>
-                    <div class="text2">
-                    <p>En el 2011 decidió que debía ampliar sus conocimientos y estudió el <i>Grado en Conservación y Restauració de Bienes Culturales</i> en 
-                        la Universidad Politécnica de Valencia. Gracias a la carrera pudo profundizar en las técnicas y materiales como cerámica, piedra y metales. 
-                        Desde entonces ha podido trabajar en varios proyectos de restauración.</p>
-                        <p>También ha sido profesor adjunto de restauración de mobiliario en <i>Gaia</i>. Y también realiza puntualmente la clase de Asienteos de Enea, del curso impartido en <i>Acanthus</i> </p>
-                        <p>En <i>Acanthus</i> estuvo trabajando en la restauración de materiales etnologícos, pétreos y lígneos de varias tipologías y técnicas.Aunque en los últimos años ha estado trabajado para 
-                        a empresa <i>EMR</i> en la fuente de los Luceros de Alicante, y actualmente se encuentra en los Santos Juanes de Valencia. Una de las iglesias más iconícas de la ciudad
-                    que fué afectada por varios sucesos que provocaron que estuviera en un estado de conservación bastante deficiente. </p> 
-                    <p>Intenta encontrar tiempo mientras trabaja en la restauración de patrimonio para la creación artística, ya que es
-                        una actividad que le permite explaiarse y descargar toda su creatividad y conocimiento. 
-                    </p>
-                </div>
+
+
+
+
                 </section>
             </article>
         </header>
         
-
-        <div class="photos-artista">
-            <div class="dunar">
-                <img src="images/dunar.JPG" alt="esculturadunar"/>
-            </div>
-            <div class="dunar2">
-                <img src="images/dunar1.JPG" alt="esculturadunar"/>
-            </div>
-        </div>
-                            -->
+        <section> 
 
 
-        <div>
-        <footer style="position: absolute;">Designed and edited by Maria Cavaller 2023</footer>
-        </div>
+
+
+
+        
+        <footer>Designed and edited by Maria Cavaller 2023</footer>
+        
 
         <script>
             // Escucha el evento de clic en los elementos del menú
@@ -125,6 +106,44 @@
             });
         </script>
         
+        <script>
+            const playButton = document.getElementById('playButton');
+            const videoModal = document.getElementById('videoModal');
+            const closeButton = document.getElementById('closeButton');
+            const videoPlayer = document.getElementById('videoPlayer');
+
+            playButton.addEventListener('click', () => {
+            // Mostrar el modal al hacer clic en el botón
+            videoModal.style.display = 'block';
+            
+            // Mostrar el video dentro del modal
+            videoPlayer.style.display = 'block';
+            videoPlayer.play();
+            });
+
+            closeButton.addEventListener('click', () => {
+            // Ocultar el modal y detener la reproducción del video al hacer clic en el botón de cierre
+            videoModal.style.display = 'none';
+            videoPlayer.pause();
+            });
+        </script>
+        <script>
+            const imagenes = [
+            'images/enea.jpg',
+            'images/enea2.jpg',
+            ]
+            function cambiarImagen() {
+                const imgElement = document.getElementById('imagen-cambiante');
+                let index = 0;
+                setInterval(() => {
+                    imgElement.src = imagenes[index];
+                    index = (index + 1) % imagenes.length;
+                }, 5000); // 4000 milisegundos = 4 segundos
+            }
+
+            // Inicia el cambio de imagen al cargar la página
+            cambiarImagen();
+        </script>
        
 
     </body>

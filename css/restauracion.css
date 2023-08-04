@@ -162,8 +162,7 @@ li a:hover{
 }
 .principal{
     border-radius: 50%;
-    margin-bottom: 1em;
-    border-radius: 50%;
+    margin: 1em;
     border-style:inset;
     transition: all 1s;
 }
@@ -201,7 +200,7 @@ li a:hover{
 img{
     max-width: 100%;
 }
-
+ /* VIDEO */
 .modal {
     display: none;
     position: fixed;
@@ -339,6 +338,7 @@ footer{
     }
     img{
         max-width: 100%;
+        
     }
     .modal-content {
         top: 50%;

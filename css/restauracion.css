@@ -190,7 +190,7 @@ li a:hover{
     align-items: center;
     
 }
-.image>img{
+.image>img, #image1, #imagen-cambiante{
     max-width: 100%;
     margin-bottom: 1em;
     border-radius: 50%;
@@ -200,6 +200,21 @@ li a:hover{
 img{
     max-width: 100%;
 }
+/*
+.image-container {
+    display: flex;
+  }
+  
+ .cambio {
+    width: 90%;
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+*/
  /* VIDEO */
 .modal {
     display: none;

@@ -47,15 +47,27 @@
             <article>
                 <h1 id="titulo">RESTAURACIÓN DE ARTE</h1>
                     <p>Los amantes del arte saben que para que se mantenga eterno debe tenerse en cuenta que el material se degrada. Por ello es muy importante su convservación y mantenimiento para dar longevidad al patrimonio. </p>
-                    <img class="principal" src="images/fuente.JPG" alt="fuente">
+                    
                 <section> 
                     <h2>PIEDRA Y MADERA</h2>
-
                     <p>Estos dos materiales son los que más experiencia se ha podido desarrollar.</p>
-                    
+                    <div class="contenedor">
+                        <div id="div1" class="image-container">
+                            <img id="image1" class="cambio active"  src="images/limpieza.jpeg" alt="enea">
+                            <!--<img id="image2" class="cambio" src="images/santosjuanes.jpeg" alt="santos juanes">-->
+                        </div>
+                        <div class="text">
+                            <p>En los edificios patrimoniales, la mayoría de materiales que nos podemos encontrar son piedra y madera. Estos son los elementos con los que más 
+                                ha podido trabajar durante sus años de experiencia profesional en el sector de la restauración de patrimonio. 
+                                <br>Procesos realizados: Proyección de partículas para la limpieza de fachadas de materiales pétreos. 
+                                Reintengración colorimétrica, Consolidación, etc. <br>Gracias a la experiéncia previa en realización de encimeras también tiene conocimientos 
+                                sufientes para la confección de moldes para la reintegración volumétrica. 
+                                <br>Tristan ha estado en campañas como el antiguo molino de Monsalva, La fuente de Luceros, y actualmente se encuentra en los Santos Juanes de Valencia. 
+                            </p>
+                        </div>
                     <h2>ASIENTOS ENEA</h2>
                     <div class="contenedor">
-                        <div class="image">
+                        <div id="div2" class="contenedor">
                             <img id="imagen-cambiante" src="images/enea.JPG" alt="enea">
                         
                             <button id="playButton">
@@ -75,7 +87,7 @@
                 
                         <div class="text">
                             <p>Los asientos de enea, están hecho en base a una técnica artesanal poco practicada actualmente, en la que tanto los especialistas como la material prima están escaseando. Para la perdurabilidad de la técnica se debe prácticar y transmitir para que no caiga en desuso.
-                            Durante estos años ha impartido clases de enea en la académia <i>Acanthus</i>. Además de realización por encargo de asientos de este material. </p>
+                            Durante estos años Trisan ha impartido puntualmente clases de enea en la académia <i>Acanthus</i>. Además de realización por encargo de asientos de este material. </p>
                             
                             
 
@@ -144,7 +156,7 @@
 
 
         <script>
-            const imagenes = [
+                        const imagenes = [
             'images/enea.jpg',
             'images/enea2.jpg',
             ]
@@ -158,9 +170,26 @@
             }
 
             // Inicia el cambio de imagen al cargar la página
-            cambiarImagen();
+
+        
         </script>
        
 
     </body>
 </html>
+
+<!--
+
+        
+        
+        document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('.contenedor img');
+        let index = 0;
+
+        setInterval(function () {
+            images.forEach(img => img.classList.remove('active'));
+            index = (index + 1) % images.length;
+            images[index].classList.add('active');
+        }, 5000);
+        });
+        -->

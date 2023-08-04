@@ -55,13 +55,9 @@
                     <div class="contenedor">
                         <div class="image">
                             <img id="imagen-cambiante" src="images/enea.JPG" alt="enea">
-                        </div>
-                        <div class="description">
-                            <p>Realización puntual de clases de enea. Además de realización por encargo de asientos de este material. En una técnica poco practicada, en la que los artesanos y la material prima están escaseando. Para la perdurabilidad de la técnica se debe prácticar y transmitir para que caiga en desuso.</p>
-                            
-                            
+                        
                             <button id="playButton">
-                                <img src="images/arrow-next.svg" alt="Icono de reproducción">
+                                <img src="images/play.svg" alt="Icono de reproducción">
                               </button>
                             
                               <div id="videoModal" class="modal">
@@ -73,6 +69,13 @@
                                   </video>
                                 </div>
                               </div>
+                        </div>
+                
+                        <div class="text">
+                            <p>Realización puntual de clases de enea. Además de realización por encargo de asientos de este material. En una técnica poco practicada, en la que los artesanos y la material prima están escaseando. Para la perdurabilidad de la técnica se debe prácticar y transmitir para que caiga en desuso.</p>
+                            
+                            
+
                         </div>
 
                     </div>
@@ -113,8 +116,12 @@
             const videoPlayer = document.getElementById('videoPlayer');
 
             playButton.addEventListener('click', () => {
-            // Mostrar el modal al hacer clic en el botón
+            // Mostrar el modal y el botón de cierre al hacer clic en el botón
             videoModal.style.display = 'block';
+            closeButton.style.display = 'block';
+            
+            // Mostrar la capa semi-transparente sobre el fondo
+            videoModal.insertAdjacentHTML('afterbegin', '<div class="modal-overlay"></div>');
             
             // Mostrar el video dentro del modal
             videoPlayer.style.display = 'block';
@@ -122,11 +129,17 @@
             });
 
             closeButton.addEventListener('click', () => {
-            // Ocultar el modal y detener la reproducción del video al hacer clic en el botón de cierre
+            // Ocultar el modal, el botón de cierre y la capa semi-transparente al hacer clic en el botón de cierre
             videoModal.style.display = 'none';
+            closeButton.style.display = 'none';
+            videoModal.querySelector('.modal-overlay').remove(); // Eliminar la capa semi-transparente
             videoPlayer.pause();
             });
+            
         </script>
+
+
+
         <script>
             const imagenes = [
             'images/enea.jpg',

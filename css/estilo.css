@@ -30,11 +30,20 @@ html body {
     margin-left: 1em;
     margin-right: 1em;
   }
-  p{
-    margin-left: 1em;
-    margin-right: 1em;
-    text-align: justify;
-  }
+  /* Estilos del contenedor del mensaje */
+.mensaje-contenedor{
+    position: relative;
+}
+
+/* Estilos del mensaje flotante */
+#mensaje{
+    position: absolute;
+    text-align: center;
+    margin-top: 40%;
+    margin-left: 50%;
+    width: 10em;
+}
+
 
   /*quitar estilo a los enlaces*/
   a {
@@ -46,7 +55,7 @@ html body {
 .topbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:flex-start;
     align-items: center;
     position: fixed;
     /*background-color: #e6dfcb;*/
@@ -171,13 +180,9 @@ footer{
     footer{
         font-size: 70%;
     }
-    /*
-    .firma{
-        width: 20em;
-        margin-left: 1em;
-    }*/
+    
     .imagen_fondo{
-        background-image: url(../images/INICIO2.jpg);
+        background-image: url(images/INICIO2.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -185,6 +190,12 @@ footer{
         max-height: 100%;
         max-width: 100%; /* Esto asegura que el ancho no supere el tamaño del contenedor */
         max-height: 100%;
+    }
+    #mensaje{
+        position: absolute;
+        margin-top: 50%;
+        margin-left: 50%;
+        width: 5em;
     }
 /*navegador**/
 .menu-button-container {

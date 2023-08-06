@@ -11,13 +11,17 @@
         <link rel="icon" href="images/firma.svg"/>
     </head>
     
-
+    
     <body id="page-top" class="index">    
             <div id="barra" class="topbar">
                 <input type="checkbox" name="Menu" id="menu-toggle" />
                 <label class="menu-button-container" for="menu-toggle">
                     <img id="icon-home" class="icon" src="images/firma_tristan.svg" alt="icon menu"/>
+
                 </label>
+                <div id="mensaje" style="display: none;">
+                    <p>Clica para abrir menu</p>
+               </div>
                 <div class="menu-button"></div>
                     <nav class="nav-menu">
                         <ul class="nav-menu">
@@ -35,8 +39,11 @@
                             </li>
                         </ul>
                     </nav>
-
+                <div class="mensaje-contenedor">
+                
             </div>
+            </div>
+
                 <footer><b>Designed and edited by Maria Cavaller 2023</b></footer>         
 
 
@@ -67,5 +74,43 @@
         icon.style.transform = "scale(1)";
         });
         </script>
+        <script>
+        // Obtener referencia al icono y al mensaje
+        const icono = document.getElementById('icon-home');
+        const mensaje = document.getElementById('mensaje');
+
+        // Función para mostrar el mensaje flotante
+        function mostrarMensaje() {
+            mensaje.style.display = 'block';
+        }
+
+        // Función para ocultar el mensaje flotante
+        function ocultarMensaje() {
+            mensaje.style.display = 'none';
+        }
+
+        // Temporizador para mostrar el mensaje cada 5 segundos y ocultarlo después de 3 segundos
+        const intervaloMostrar = 5000; // 5000 milisegundos = 5 segundos
+        const tiempoMostrado = 3000;   // 3000 milisegundos = 3 segundos
+
+        function mostrarMensajeCada5Segundos() {
+            mostrarMensaje();
+            setTimeout(ocultarMensaje, tiempoMostrado);
+        }
+
+        setInterval(mostrarMensajeCada5Segundos, intervaloMostrar);
+
+        // Evento de clic en el icono para ocultar el mensaje si está visible
+        icono.addEventListener('click', () => {
+            if (mensaje.style.display === 'block') {
+                ocultarMensaje();
+            }
+        });
+
+
+        </script>
+
+
+
     </body>
 </html>

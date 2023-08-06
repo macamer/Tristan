@@ -183,7 +183,6 @@ footer{
     .imagen_fondo{
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
         height: 100vh;
         max-height: 100%;
         max-width: 100%; /* Esto asegura que el ancho no supere el tamaño del contenedor */

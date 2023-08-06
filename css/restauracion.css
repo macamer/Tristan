@@ -170,7 +170,7 @@ li a:hover{
 
 
 /*----RESTAURACION---*/
-.contenedor, .contenedor2{
+.contenedor{
     display: flex;
     align-items: center;
     justify-content: space-around;

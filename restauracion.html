@@ -50,10 +50,10 @@
                     
                 <section> 
                     <h2>PIEDRA Y MADERA</h2>
-                    <p>Estos dos materiales son los que más experiencia se ha podido desarrollar.</p>
+                    
                     <div class="contenedor">
-                        <div id="div1" class="image-container">
-                            <img id="image1" class="cambio active"  src="images/limpieza.jpeg" alt="enea">
+                        <div class="image">
+                            <img id="imagen-cambiante"  src="images/limpieza.jpeg" alt="restauracion">
                             <!--<img id="image2" class="cambio" src="images/santosjuanes.jpeg" alt="santos juanes">-->
                         </div>
                         <div class="text">
@@ -65,10 +65,13 @@
                                 <br>Tristan ha estado en campañas como el antiguo molino de Monsalva, La fuente de Luceros, y actualmente se encuentra en los Santos Juanes de Valencia. 
                             </p>
                         </div>
+                    </div>
+                </section>
+                <section>
                     <h2>ASIENTOS ENEA</h2>
-                    <div class="contenedor">
-                        <div id="div2" class="contenedor">
-                            <img id="imagen-cambiante" src="images/enea.JPG" alt="enea">
+                    <div class="contenedor2">
+                        <div class="image">
+                            <img src="images/enea.JPG" alt="enea">
                         
                             <button id="playButton">
                                 <img src="images/play.svg" alt="Icono de reproducción">
@@ -84,29 +87,19 @@
                                 </div>
                               </div>
                         </div>
-                
                         <div class="text">
                             <p>Los asientos de enea, están hecho en base a una técnica artesanal poco practicada actualmente, en la que tanto los especialistas como la material prima están escaseando. Para la perdurabilidad de la técnica se debe prácticar y transmitir para que no caiga en desuso.
                             Durante estos años Trisan ha impartido puntualmente clases de enea en la académia <i>Acanthus</i>. Además de realización por encargo de asientos de este material. </p>
-                            
-                            
-
                         </div>
-
                     </div>
-
-
-
-
                 </section>
+
+
+
+                
             </article>
         </header>
         
-        <section> 
-
-
-
-
 
         
         <footer>Designed and edited by Maria Cavaller 2023</footer>
@@ -156,9 +149,10 @@
 
 
         <script>
-                        const imagenes = [
-            'images/enea.jpg',
-            'images/enea2.jpg',
+            const imagenes = [
+            'images/limpieza.jpeg',
+            'images/santosjuanes.jpeg',
+            'images/fuente.JPG'
             ]
             function cambiarImagen() {
                 const imgElement = document.getElementById('imagen-cambiante');
@@ -166,11 +160,10 @@
                 setInterval(() => {
                     imgElement.src = imagenes[index];
                     index = (index + 1) % imagenes.length;
-                }, 5000); // 4000 milisegundos = 4 segundos
+                }, 4000); // 4000 milisegundos = 4 segundos
             }
-
+            cambiarImagen(); // Iniciar el cambio de imágenes
             // Inicia el cambio de imagen al cargar la página
-
         
         </script>
        

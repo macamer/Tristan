@@ -170,12 +170,12 @@ li a:hover{
 
 
 /*----RESTAURACION---*/
-.contenedor{
+.contenedor, .contenedor2{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-right: 2em;
-    padding-left: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 .text{
     flex: 2;
@@ -190,7 +190,7 @@ li a:hover{
     align-items: center;
     
 }
-.image>img, #image1, #imagen-cambiante{
+.image>img{
     max-width: 100%;
     margin-bottom: 1em;
     border-radius: 50%;
@@ -200,21 +200,7 @@ li a:hover{
 img{
     max-width: 100%;
 }
-/*
-.image-container {
-    display: flex;
-  }
-  
- .cambio {
-    width: 90%;
-    display: none;
-  }
-  
-  .active {
-    display: block;
-  }
-  
-*/
+
  /* VIDEO */
 .modal {
     display: none;

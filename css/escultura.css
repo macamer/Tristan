@@ -41,6 +41,7 @@ html body {
     margin: 0;
   }
 
+  
 /*NAVEGADOR*/
 .topbar{
     display: flex;
@@ -60,13 +61,10 @@ nav-menu {
   list-style: none;
   margin: 0;
   padding: 0;
-  
 }
-
 nav a{
     padding: 2px 7px 2px 7px;
 }
-
 .nav-menu__item{
     margin: 0 1rem;
     overflow: hidden;
@@ -84,26 +82,9 @@ li a:hover{
 #menu-toggle {
     display: none;
 }
-
-#icon-home:hover {
-    cursor: pointer;
-    outline: 0;
-}
-/*ICONOS*/
-
-.icon-home {
-    width: 3em;
-    padding-right: 1.5em;
-}
-.firma{
-    width: 20em;
-    margin-left: 1em;
-}
-
 .menu-button-container {
     display: flex; 
 }
-
 .nav-menu {
     position: absolute;
     top: 2.1em;
@@ -114,7 +95,6 @@ li a:hover{
     text-decoration: none;
     font-weight: bold;
 }
-
 .nav-menu>ul {
     display: flex;
     flex-direction: column;
@@ -140,26 +120,33 @@ li a:hover{
 
 /*fin del navegador*/
 
+/*ICONOS*/
+#icon-home:hover {
+  cursor: pointer;
+  outline: 0;
+}
+.icon-home {
+  width: 3em;
+  padding-right: 1.5em;
+}
+.firma{
+  width: 20em;
+  margin-left: 1em;
+}
 
-/*----ESCULTURAS---*/
-
-
-/*galeria*/
+/*----GALERIA---*/
 
 .container {
 	max-width: 100rem;
 	margin: 0 auto;
 	padding: 0 2rem 2rem;
 }
-
-
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
 	/* Compensate for excess margin on outer gallery flex items */
 	margin: -2rem 1rem;
 }
-
 .gallery-item {
 	/* Minimum width of 24rem and grow to fit available space */
 	flex: 1 0 12rem;
@@ -168,7 +155,6 @@ li a:hover{
 	box-shadow: 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
 }
-
 .gallery-image {
 	display: block;
 	width: 100%;
@@ -176,95 +162,34 @@ li a:hover{
 	object-fit: cover;
 	transition: transform 400ms ease-out;
 }
-
 .gallery-image:hover {
 	transform: scale(1.25);
 }
 
 
 
-
-
-
-
-
-
-/*PRUEBA
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3em;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-container {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .image-container img {
-    height: 20em;
-    
-  }
-  
-  .image-container:hover {
-    transform: scale(1.4);
-  }
-  
-  .image-description {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 20px;
-    display: none;
-  }
-  
-  .image-description p {
-    margin: 0;
-  }
-  
-  .image-description.active {
-    display: block;
-  }
-*/
-
-
-
-
-
-
-
-
 /*--FLECHA--*/
 .scroll-to-top {
   display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 24px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-    z-index: 999;
-    opacity: 0.7;
-    transform: scale(0); /* Agregamos una escala inicial de 0 para que esté oculto */
-    transition: transform 0.3s ease; /* Añadimos una transición para la animación */
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0.7;
+  transform: scale(0); /* Agregamos una escala inicial de 0 para que esté oculto */
+  transition: transform 0.3s ease; /* Añadimos una transición para la animación */
+}
 i>img{
   width: 2em;
   height: 2em;
 }
-
 .scroll-to-top.show {
   display: block;
   transform: scale(1); /* Escala de 1 para mostrar el botón completo */
@@ -278,64 +203,60 @@ footer{
     color: black;
     padding-left: 2em;
     margin-bottom: 2em;
-
 }
 
 /*MOBIL*/
 @media (max-width:768px) {
-    footer{
-        font-size: 70%;
-        padding-right: 1em;
-    }
-
-    .topbar{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        /*background-color: #e6dfcb;*/
-        height: 3em;
-        padding: 0;
-        padding-left: 1em;
-        width: 100%;
-        transition: background-color 0.3s ease-in-out;
-        z-index: 1;
-        max-width: 100%;
-        max-height: 100%;
-    }
-    .nav-menu__button>img {
-        max-width: 100%; /* Esto asegura que el ancho no supere el tamaño del contenedor */
-        max-height: 100%; /* Esto asegura que la altura no supere el tamaño del contenedor */
-      }
-      /*
-    .flexbox{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding: 1em;
-    }
-    */
-    .gallery-item {
-      position: relative;
-      height: 50%;
-      overflow: hidden;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    .firma{
-        width: 90%;
-        margin: 0;
-        padding: 0;
-        max-width: 100%;
-        max-height: 100%;
-    }
-  h2{
-        width: 40%;
-      }
-
+  html{
+    max-width: 100vh;
+  }
+  footer{
+    font-size: 70%;
+    padding-right: 1em;
+  }
+  .topbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    /*background-color: #e6dfcb;*/
+    height: 3em;
+    padding: 0;
+    padding-left: 1em;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1;
+    max-width: 100vh;
+    max-height: 100%;
+  }
+  .nav-menu__button>img {
+    max-width: 100%; /* Esto asegura que el ancho no supere el tamaño del contenedor */
+    max-height: 100%; /* Esto asegura que la altura no supere el tamaño del contenedor */
+  }
+  #icon-home{
+    max-width: 100vh;
+  }
   .container{
     padding: 0;
   }
+  .gallery-item {
+    position: relative;
+    height: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .firma{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  h2{
+    width: 40%;
+  }
+
+
 }

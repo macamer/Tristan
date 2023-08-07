@@ -278,6 +278,9 @@ footer{
         max-width: 100%; /* Esto asegura que el ancho no supere el tamaño del contenedor */
         max-height: 100%; /* Esto asegura que la altura no supere el tamaño del contenedor */
       }
+    #icon-home{
+    max-width: 100vh;
+    }
     .flexbox{
         display: flex;
         align-items: flex-start;

@@ -1,5 +1,6 @@
 
 
+
 window.addEventListener('scroll', function() {
     var scrollToTopBtn = document.querySelector('.scroll-to-top');
     if (window.scrollY > 200) {
@@ -28,7 +29,7 @@ window.addEventListener('scroll', function() {
 // CAMBIO DE IMAGENES
   const imagenes = [
     'images/limpieza.jpeg',
-    'images/santosjuanes.jpeg',
+    'images/volumen.jpg',
     'images/fuente.JPG'
     ]
     function cambiarImagen() {

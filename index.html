@@ -20,8 +20,10 @@
 
                 </label>
                 <div id="mensaje" style="display: none;">
-                    <p>Clica para abrir menu</p>
-               </div>
+                   <div>
+                    <img class="arrow" src="images/arrow-up-left.svg" alt="arrow-up-left"> <p>Clica para abrir menu</p>
+                    </div>
+                </div>
                 <div class="menu-button"></div>
                     <nav class="nav-menu">
                         <ul class="nav-menu">
@@ -47,82 +49,6 @@
                 <footer><b>Designed and edited by Maria Cavaller 2023</b></footer>         
 
 
-      <script>
-            // Escucha el evento de clic en los elementos del menú
-            const menuItems = document.querySelectorAll('.nav-menu__item');
-            menuItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    // Oculta automáticamente la lista de elementos al hacer clic
-                    const menuToggle = document.getElementById('menu-toggle');
-                    menuToggle.checked = false;
-                });
-            });
-
-            document.addEventListener("DOMContentLoaded", function () {
-             const icon = document.getElementById("icon-home");
-
-        // Función para agregar la clase "fallback" en caso de error de animación
-        function handleAnimationError() {
-            icon.classList.add("fallback");
-        }
-
-        // Evento para detectar errores de animación y aplicar la alternativa
-        icon.addEventListener("transitionend", handleAnimationError);
-
-        // Muestra el icono (puedes modificar su posición inicial con top y left)
-        icon.style.opacity = "1";
-        icon.style.transform = "scale(1)";
-        });
-        </script>
-
-        
-        <script>
-        // Obtener referencia al icono y al mensaje
-        const icono = document.getElementById('icon-home');
-        const mensaje = document.getElementById('mensaje');
-
-        // Variable para rastrear si el mensaje ya ha sido mostrado
-        let mensajeMostrado = false;
-
-        // Función para mostrar el mensaje flotante
-        function mostrarMensaje() {
-            if (!mensajeMostrado) {
-                mensaje.style.display = 'block';
-                setTimeout(() => {
-                    ocultarMensaje();
-                    mensajeMostrado = true;
-                }, tiempoMostrado);
-            }
-        }
-
-        // Función para ocultar el mensaje flotante
-        function ocultarMensaje() {
-            mensaje.style.display = 'none';
-        }
-
-        // Temporizador para mostrar el mensaje cada 5 segundos
-        const intervaloMostrar = 5000; // 5000 milisegundos = 5 segundos
-        const tiempoMostrado = 3000;   // 3000 milisegundos = 3 segundos
-
-        function mostrarMensajeCada5Segundos() {
-            mostrarMensaje();
-        }
-
-        setInterval(mostrarMensajeCada5Segundos, intervaloMostrar);
-
-        // Evento de clic en el icono para ocultar el mensaje si está visible y establecer mensajeMostrado como verdadero
-        icono.addEventListener('click', () => {
-            if (mensaje.style.display === 'block') {
-                ocultarMensaje();
-                mensajeMostrado = true;
-            }
-        });
-
-
-
-        </script>
-
-
-
+            <script defer src="js/index.js"></script>
     </body>
 </html>

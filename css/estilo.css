@@ -41,8 +41,17 @@ html body {
     margin-top: 40%;
     margin-left: 50%;
     width: 10em;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
-
+.arrow{
+    width: 1.5em;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
 
   /*quitar estilo a los enlaces*/
   a {

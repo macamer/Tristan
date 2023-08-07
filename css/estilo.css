@@ -161,7 +161,7 @@ footer{
     bottom: 1em;
     color: black;
     position:absolute;
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 
@@ -169,6 +169,7 @@ footer{
 @media (max-width:768px) and (orientation: portrait) {
     footer{
         font-size: 70%;
+        bottom: 0.5em;
     }
     .imagen_fondo{
         background-size: cover;

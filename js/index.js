@@ -49,6 +49,9 @@ function iniciarMostrarMensaje() {
     if (esFormatoMovil) {
         intervalo = setInterval(mostrarYDespuesOcultarMensaje, intervaloMostrar);
     }
+    if (!esFormatoMovil) {
+        ocultarMensaje();
+    }
 }
 
 icono.addEventListener('click', function () {

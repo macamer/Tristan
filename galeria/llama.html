@@ -52,28 +52,27 @@
         <header id="tristan"> 
             <article>
                 <h2 id="titulo">LLAMA</h2>
-                <section> 
-                    <div class="ISSlideOuter">
-                        <div id="slider" class="lSSlideWrapper usingCss" style="transition-duration: 400ms; transition-timing-function: ease;">
-                            <ul id="lightSlider" class="lightSlider lsGrab lSSlide" >
-                                <li data-thumb="../galeria/images/llama.JPG" class="lslide" >
-                                    <img src="../galeria/images/llama.JPG">
+              
+                    <section class="ISSlideOuter">
+                        <!--<div id="slider" class="lSSlideWrapper usingCss" style="transition-duration: 400ms; transition-timing-function: ease;">-->
+                            <ul id="lightSlider" class="lightSlider lSSlide" >
+                                <li data-thumb="../galeria/images/llama.JPG" class="lslide"  >
+                                    <img src="../galeria/images/llama.JPG" >
                                 </li>
                                 <li data-thumb="../galeria/images/llama2.JPG" class="lslide" >
-                                    <img src="../galeria/images/llama2.JPG">
+                                    <img src="../galeria/images/llama2.JPG" >
                                 </li>
                                 <li data-thumb="../galeria/images/llama3.JPG" class="lslide" >
-                                    <img src="../galeria/images/llama3.JPG">
+                                    <img src="../galeria/images/llama3.JPG" >
                                 </li>
                                 <li data-thumb="../galeria/images/llama4.JPG" class="lslide" >
-                                    <img src="../galeria/images/llama4.JPG">
+                                    <img src="../galeria/images/llama4.JPG" >
                                 </li>
                                 <li data-thumb="../galeria/images/llama5.jpg" class="lslide">
-                                    <img src="../galeria/images/llama5.jpg">
+                                    <img src="../galeria/images/llama5.jpg" >
                                 </li>
                             </ul>                
-                        </div>
-                    </div>
+
                 </section>
                 <section>
                     <div class="texto">
@@ -103,18 +102,7 @@
         <footer>Designed and edited by Maria Cavaller 2023</footer>
         </div>
 
-<!--ocultar menu al clicar-->
-        <script>
-            // Escucha el evento de clic en los elementos del menú
-            const menuItems = document.querySelectorAll('.nav-menu__item');
-            menuItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    // Oculta automáticamente la lista de elementos al hacer clic
-                    const menuToggle = document.getElementById('menu-toggle');
-                    menuToggle.checked = false;
-                });
-            });
-        </script>
+
 
 <!--flecha a inicio-->
         <script>
@@ -149,6 +137,17 @@
             });
         </script>
        
-
+<!--ocultar menu al clicar-->
+        <script>
+            // Escucha el evento de clic en los elementos del menú
+            const menuItems = document.querySelectorAll('.nav-menu__item');
+            menuItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    // Oculta automáticamente la lista de elementos al hacer clic
+                    const menuToggle = document.getElementById('menu-toggle');
+                    menuToggle.checked = false;
+                });
+            });
+        </script>
     </body>
 </html>

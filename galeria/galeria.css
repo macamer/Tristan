@@ -165,7 +165,7 @@ margin: 0 auto; /* Centrar horizontalmente */
 }
 
 .lSGallery li {
-height: auto; /* Altura de cada miniatura */
+height: 7em; /* Altura de cada miniatura */
 align-items: center;
 overflow: hidden; /* Ocultar contenido que exceda el tamaño */
 }

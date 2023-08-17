@@ -23,7 +23,7 @@ const tiempoMostrado = 3000;   // 3000 milisegundos = 3 segundos
 
 let clicEnIcono = false;
 let mensajeMostrado = false;
-let intevalo;
+let intervalo;
 
 function ocultarMensaje() {
     mensaje.style.opacity = 0; // Cambiar la opacidad a 0 para ocultar el mensaje suavemente

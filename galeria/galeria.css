@@ -194,27 +194,31 @@ object-fit: cover; /* Ajustar la imagen para cubrir completamente el área de la
 
 /*--FLECHA--*/
 .scroll-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 24px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-    z-index: 999;
-    opacity: 0.7;
-    transform: scale(0); /* Agregamos una escala inicial de 0 para que esté oculto */
-    transition: transform 0.3s ease; /* Añadimos una transición para la animación */
-  }
-
-  .scroll-to-top.show {
-    display: block;
-    transform: scale(1); /* Escala de 1 para mostrar el botón completo */
-  }
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin: 0.5em;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0.7;
+  transform: scale(0); /* Agregamos una escala inicial de 0 para que esté oculto */
+  transition: transform 0.3s ease; /* Añadimos una transición para la animación */
+}
+i>img{
+  width: 2em;
+  height: 2em;
+}
+.scroll-to-top.show {
+  display: block;
+  transform: scale(1); /* Escala de 1 para mostrar el botón completo */
+}
 
 
 /*final*/
@@ -229,21 +233,12 @@ footer{
 
 /*MOBIL*/
 @media (max-width:768px) {
-  body, html{
-    margin: 0;
-    padding: 0;
-    max-width: 100vh;
-    overflow: hidden;
-  }
-
-
   .topbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    /*background-color: #e6dfcb;*/
     height: 3em;
     padding: 0;
     padding-left: 1em;
@@ -267,21 +262,23 @@ footer{
     max-width: 100%;
     max-height: 100%;
   }
-
-
-
-
+  #lightSlider li img {
+    height: auto; /*altura de la foto principal*/
+  }
+  #slider{
+    max-width: 100%; /* Ancho máximo del contenedor */
+    margin: 0 auto; 
+    height: auto;
+  }
     .texto{
       width: 90%;
-    }
-
-    #slider{
-      max-width: 100%; /* Ancho máximo del contenedor */
-      margin: 0; 
     }
     footer{
       font-size: 70%;
       padding-right: 1em;
     }
-
+    /*--FLECHA--*/
+    .scroll-to-top {
+      right: 2em;  
+    }
 }

@@ -6,14 +6,8 @@
         <title>Tristan</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
-        <!--
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//sachinchoolur.github.io/lightslider/dist/js/lightslider.js"></script>
-        <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
-    -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="galeria.css"/>
-                <!-- poner icono en la pestaña -->
         <link rel="icon" href="../images/firma.svg"/>
     </head>
     
@@ -77,14 +71,15 @@
                 </section>
                 <section>
                     <div class="texto">
-                        <b><p>Los amantes, 2013</p>
+                        <b><p>Los amantes, 2012</p>
                         <p>Madera tallada</p>
                         <p>62 x 30 cm</p></b>
                             
                     </div>
                     <div class="description">
-                        <p><b>La efimeridad y la mortaldad de la vida envuelta en una escultura.
-                            Pretende evocar la eternidad de la materia y al belleza que presentan los materiales obtenidos de la naturaleza. 
+                        <p><b>Esta escultura evoca la unión de una pareja de amantes en la que el hombre abraza a la 
+                            mujer. Tanto el color de la madera y sus vetas verticales accentual la pasión del momento,
+                            creando una obra de gran belleza que incita al espectador a admirar hasta la punta más alta de la obra. 
                         </b></p> 
                     </div>               
                 </section>
@@ -117,24 +112,6 @@
             });
         </script>
 
-<!--flecha a inicio-->
-        <script>
-            window.addEventListener('scroll', function() {
-            var scrollToTopBtn = document.querySelector('.scroll-to-top');
-            if (window.scrollY > 200) {
-                scrollToTopBtn.classList.add('show');
-            } else {
-                scrollToTopBtn.classList.remove('show');
-            }
-            });
-            document.querySelector('.scroll-to-top').addEventListener('click', function() {
-                window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-                });
-            });
-        </script>
-
 <!--lightSlider-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
@@ -147,9 +124,25 @@
                 slideMargin: 0,
                 thumbItem: 5
             });
-            });
+            });            
         </script>
-       
+       <!--flecha a inicio-->
+       <script>
+        window.addEventListener('scroll', function() {
+        var scrollToTopBtn = document.querySelector('.scroll-to-top');
+        if (window.scrollY > 200) { //a que altura sale la flecha
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+        });
+        document.querySelector('.scroll-to-top').addEventListener('click', function() {
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+        });
+    </script>
 
     </body>
 </html>

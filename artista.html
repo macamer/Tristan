@@ -112,16 +112,16 @@
 
     <div class="photos-artista">
       <div class="dunar">
-        <img src="images/dunar.JPG" alt="esculturadunar">
+        <img src="images/dunar.JPG" alt="esculturadunar" loading="lazy">
       </div>
       <div class="dunar">
-        <img src="images/dunar1.JPG" alt="esculturadunar">
+        <img src="images/dunar1.JPG" alt="esculturadunar" loading="lazy">
       </div>
     </div>
 
     <div class="scroll-to-top">
       <i class="fas fa-arrow-up">
-        <img src="images/flecha2.svg" alt="flecha">
+        <img src="images/flecha2.svg" alt="flecha" loading="lazy">
       </i>
     </div>
 
@@ -129,61 +129,6 @@
       <footer>Designed and edited by Maria Cavaller 2023</footer>
     </div>
 
-    <script>
-      // Escucha el evento de clic en los elementos del menú
-      const menuItems = document.querySelectorAll(".nav-menu__item");
-      menuItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          // Oculta automáticamente la lista de elementos al hacer clic
-          const menuToggle = document.getElementById("menu-toggle");
-          menuToggle.checked = false;
-        });
-      });
-    </script>
-    <script>
-      window.addEventListener("scroll", function () {
-        var scrollToTopBtn = document.querySelector(".scroll-to-top");
-        if (window.scrollY > 200) {
-          scrollToTopBtn.classList.add("show");
-        } else {
-          scrollToTopBtn.classList.remove("show");
-        }
-      });
-      document
-        .querySelector(".scroll-to-top")
-        .addEventListener("click", function () {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        });
-
-      $(document).ready(function () {
-        // Intentar agregar la clase que activa la animación
-        $("h2").addClass("active");
-
-        // Verificar si la animación se aplicó correctamente
-        var animationSupported = false;
-        var animationDuration = 1000; // Duración de la animación en milisegundos (1 segundo)
-
-        // Comprobar si la animación es compatible con el navegador
-        var testElement = document.createElement("div");
-        if (
-          "animation" in testElement.style ||
-          "webkitAnimation" in testElement.style
-        ) {
-          animationSupported = true;
-        }
-
-        // Verificar si la animación se completó
-        setTimeout(function () {
-          if (!$("h2").hasClass("active")) {
-            // Si la animación no se aplicó correctamente, mostrar el texto de todas formas
-            $("h2").css("opacity", "1");
-            $("h2").css("transform", "translateY(0)");
-          }
-        }, animationDuration);
-      });
-    </script>
+    <script src="js/artista.js"></script>
   </body>
 </html>

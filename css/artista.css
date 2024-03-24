@@ -102,12 +102,12 @@ li a:hover{
 }
 
 #icon-home:hover {
-    cursor: pointer;
     outline: 0;
 }
 /*ICONOS*/
 
-.icon-home {
+.icon {
+    cursor: pointer;
     width: 3em;
     padding-right: 1.5em;
 }

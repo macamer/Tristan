@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 
 <html lang="es">
+  <head>
+    <title>Tristan</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/escultura.css">
+    <link rel="icon" href="images/firma.svg">
+  </head>
 
-    <head>
-        <title>Tristan</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/escultura.css"/>
-                <!-- poner icono en la pestaña -->
-        <link rel="icon" href="images/firma.svg"/>
-        
-    </head>
-    
+  <body id="page-top" class="page-top">
+    <div id="barra" class="topbar">
+      <input type="checkbox" name="Menu" id="menu-toggle" />
+      <label class="menu-button-container" for="menu-toggle">
+        <img
+          class="icon change-icon-color"
+          src="images/menu1.svg"
+          alt="icon menu"
+        >
+      </label>
+      <div class="menu-button"></div>
+      <nav class="nav-menu">
+        <ul class="nav-menu">
+          <li class="nav-menu__item">
+            <a class="point" href="artista.html">EL ARTISTA</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="point" href="escultura.html">ESCULTURA</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="point" href="restauracion.html">RESTAURACION</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="point" href="contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="icon-home" class="nav-menu__button">
+        <a href="index.html">
+          <img
+            class="icon change-icon-color firma"
+            src="images/firma_tristan.svg"
+            alt="icono"
+          >
+        </a>
+      </div>
+    </div>
 
-
-    <body id="page-top" class="page-top">  
-            
-        <div id="barra" class="topbar">
-            <input type="checkbox" name="Menu" id="menu-toggle" />
-            <label class="menu-button-container" for="menu-toggle">
-                <img id="icon-home" class="icon-home change-icon-color" src="images/menu1.svg" alt="icon menu"/>
-            </label>
-            <div class="menu-button"></div>
-                <nav class="nav-menu">
-                    <ul class="nav-menu">
-                        <li class="nav-menu__item">
-                            <a class="point" href="artista.html">EL ARTISTA</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="point" href="escultura.html">ESCULTURA</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="point" href="restauracion.html">RESTAURACION</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="point" href="contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </nav>
-            <div id="icon-home" class="nav-menu__button">
-                <a href="index.html"><img id="icon-home" class="icon-home change-icon-color firma" src="images/firma_tristan.svg" alt="icono"/></a>
-            </div>
-        </div>
-                     
-        
-        <header id="tristan"> 
-            <article class="container">
-              <!--
-                <h2 class="heading" id="titulo">GALERÍA</h2>-->
-                <p>Dentro de la creación de obras artísticas ha creado una variedad de 
-                    colecciones con diferentes técnicas escultóricas en 
-                    las que el artista ha querido experimentar tanto con 
-                    las formas como las texturas.</p><br>
-                <h3>LÍGNEOS</h3>
-                <div class="gallery">
-                    <div class="gallery-item" data-description="los amantes">
-                        <a href="galeria/losamantes.html"><img class="gallery-image" src="images/losamantes1.jpg" alt="los amantes"></a>
-                    </div>
-                    <div class="gallery-item" data-description="llama">
-                        <a href="galeria/llama.html"><img class="gallery-image" src="images/llama2.jpg" alt="llama"></a>
-                    </div>
-                    <div class="gallery-item" data-description="escultura de madera">
-                        <a href="galeria/eme.html"><img class="gallery-image" src="images/eme_2.JPG" alt="eme"></a>
-                      </div>
-                      <!--
+    <header id="tristan">
+      <article class="container">
+        <!--<h2 class="heading" id="titulo">GALERÍA</h2>-->
+        <p>
+          Dentro de la creación de obras artísticas ha creado una variedad de
+          colecciones con diferentes técnicas escultóricas en las que el artista
+          ha querido experimentar tanto con las formas como las texturas.
+        </p>
+        <br />
+        <h3>LÍGNEOS</h3>
+        <div class="gallery">
+          <div class="gallery-item" data-description="los amantes">
+            <a href="galeria/losamantes.html"
+              ><img
+                class="gallery-image"
+                src="images/losamantes1.jpg"
+                alt="los amantes"
+            /></a>
+          </div>
+          <div class="gallery-item" data-description="llama">
+            <a href="galeria/llama.html"
+              ><img class="gallery-image" src="images/llama2.jpg" alt="llama"
+            /></a>
+          </div>
+          <div class="gallery-item" data-description="escultura de madera">
+            <a href="galeria/eme.html"
+              ><img class="gallery-image" src="images/eme_2.JPG" alt="eme"
+            /></a>
+          </div>
+          <!--
                       <div class="gallery-item" data-description="Moises">
                         <a href="galeria/moises.html"><img class="gallery-image" src="images/moises2.jpg" alt="moises"></a>
                       </div>-->
-                      <div class="gallery-item" data-description="Moises">
-                        <a href="galeria/moises.html"><img class="gallery-image" src="images/moises.JPG" alt="moises"></a>
-                      </div>
-                    <!-- Agrega más imágenes aquí -->
-                  </div>
-                
-            </article>
-           <!--  <article>
+          <div class="gallery-item" data-description="Moises">
+            <a href="galeria/moises.html"
+              ><img class="gallery-image" src="images/moises.JPG" alt="moises"
+            /></a>
+          </div>
+          <!-- Agrega más imágenes aquí -->
+        </div>
+      </article>
+      <!--  <article>
               <h3>PIEDRA</h3>
                 <div class="gallery">
 
@@ -90,71 +104,86 @@
                     </div>
                     
             </article>-->
-            <article>
-              <h3>PIEDRA Y CENIZA</h3>
-                <div class="gallery">
-                  <div class="gallery-item"  data-description="la pareja">
-                    <a href="galeria/neptuno.html"><img class="gallery-image" src="images/neptuno.jpg" alt="neptuno"></a>
-                </div>
-                  <div class="gallery-item"  data-description="Duna Dunar">
-                      <a href="galeria/pendiente.html"><img class="gallery-image" src="galeria/images/dunarII.JPG" alt="Duna Dunar II"></a>
-                  </div>
-                  <div class="gallery-item"  data-description="Descripción de la imagen 3">
-                    <a href="galeria/duna1.html"><img class="gallery-image" src="images/dunar1.JPG" alt="Duna Dunar I"></a>
-                  </div>
-              </div>
+      <article>
+        <h3>PIEDRA Y CENIZA</h3>
+        <div class="gallery">
+          <div class="gallery-item" data-description="la pareja">
+            <a href="galeria/neptuno.html"
+              ><img
+                class="gallery-image"
+                src="images/neptuno.jpg"
+                alt="neptuno"
+            /></a>
+          </div>
+          <div class="gallery-item" data-description="Duna Dunar">
+            <a href="galeria/pendiente.html"
+              ><img
+                class="gallery-image"
+                src="galeria/images/dunarII.JPG"
+                alt="Duna Dunar II"
+            /></a>
+          </div>
+          <div
+            class="gallery-item"
+            data-description="Descripción de la imagen 3"
+          >
+            <a href="galeria/duna1.html"
+              ><img
+                class="gallery-image"
+                src="images/dunar1.JPG"
+                alt="Duna Dunar I"
+            /></a>
+          </div>
+        </div>
 
-            <!--
+        <!--
               <div class="image-description">
                 <p id="description-text">Duna lunar</p>
               </div>-->
-            </article>
-        </header>
-        
+      </article>
+    </header>
 
-        
+    <!--FLECHA PARA INICIO-->
+    <div class="scroll-to-top">
+      <i class="fas fa-arrow-up">
+        <img src="images/flecha2.svg" alt="flecha"
+      /></i>
+    </div>
 
+    <div>
+      <footer>Designed and edited by Maria Cavaller 2023</footer>
+    </div>
 
-        <!--FLECHA PARA INICIO-->
-        <div class="scroll-to-top">
-            <i class="fas fa-arrow-up"> <img src="images/flecha2.svg" alt="flecha"/></i>
-        </div>
-
-        <div>
-        <footer>Designed and edited by Maria Cavaller 2023</footer>
-        </div>
-
-        <script>
-            // Escucha el evento de clic en los elementos del menú
-            const menuItems = document.querySelectorAll('.nav-menu__item');
-            menuItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    // Oculta automáticamente la lista de elementos al hacer clic
-                    const menuToggle = document.getElementById('menu-toggle');
-                    menuToggle.checked = false;
-                });
-            });
-        </script>
-
-<!--flecha a inicio-->
-<script>
-    window.addEventListener('scroll', function() {
-      var scrollToTopBtn = document.querySelector('.scroll-to-top');
-      if (window.scrollY > 200) {
-        scrollToTopBtn.classList.add('show');
-      } else {
-        scrollToTopBtn.classList.remove('show');
-      }
-    });
-    document.querySelector('.scroll-to-top').addEventListener('click', function() {
-        window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+    <script>
+      // Escucha el evento de clic en los elementos del menú
+      const menuItems = document.querySelectorAll(".nav-menu__item");
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // Oculta automáticamente la lista de elementos al hacer clic
+          const menuToggle = document.getElementById("menu-toggle");
+          menuToggle.checked = false;
         });
-    });
-  </script>
-        
-       
+      });
+    </script>
 
-    </body>
+    <!--flecha a inicio-->
+    <script>
+      window.addEventListener("scroll", function () {
+        var scrollToTopBtn = document.querySelector(".scroll-to-top");
+        if (window.scrollY > 200) {
+          scrollToTopBtn.classList.add("show");
+        } else {
+          scrollToTopBtn.classList.remove("show");
+        }
+      });
+      document
+        .querySelector(".scroll-to-top")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+    </script>
+  </body>
 </html>
